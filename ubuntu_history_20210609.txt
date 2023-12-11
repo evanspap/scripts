@@ -1,0 +1,449 @@
+    1  pip install alphafold2-pytorch
+    2  cd
+    3  pwd
+    4  ls
+    5  git clone https://github.com/lucidrains/alphafold2.git
+    6  ls
+    7  cd alphafold2/
+    8  ls
+    9  pip3 install alphafold2-pytorch
+   10  ls
+   11  more refinement.py 
+   12  ls
+   13  python3 setup.py 
+   14  more setup.py 
+   15  ls
+   16  python3 refinement.py 
+   17  python3 utils.py 
+   18  more utils.py 
+   19  ls
+   20  cd tests/
+   21  ls
+   22  cd 
+   23  cd alphafold_pytorch/
+   24  ls
+   25  cd cd hh-suite/
+   26  ls
+   27  cd databases/
+   28  ls
+   29  wget http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz
+   30  cd 
+   31  cd /mnt/c/Users/ep635/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/KRIT1_HUM/
+   32  ls
+   33  more log_analysis.py 
+   34  more log_analysis
+   35  more
+   36  more log_analysis.py 
+   37  more log_analysis.py
+   38  ls
+   39  pwd
+   40  cd Controls/
+   41  ls
+   42  python log_analysis.py 
+   43  python3 log_analysis.py 
+   44  more log_analysis.py 
+   45  more log_analysis.py ./
+   46  python3 log_analysis.py .
+   47  python3 log_analysis.py ./
+   48  python3 log_analysis.py /mnt/c/Users/ep635/Dropbox (Partners HealthCare)/MMSEGs Discussion/GeneDeepDives/Evangelos/Docking/KRIT1_HUM/Controls/
+   49  python3 log_analysis.py /mnt/c/Users/ep635/Dropbox (Partners HealthCare)/MMSEGs Discussion/GeneDeepDives/Evangelos/Docking/KRIT1_HUM/Controls
+   50  more log_analysis.py ./
+   51  more log_analysis.py *.pdbqt
+   52  ls
+   53  tail -n +1 *.txt
+   54  tail -n +1 *.txt > KRIT1_control.log
+   55  ls
+   56  python3 log_analysis.py ./KRIT1_control.log 
+   57  python3 log_analysis.py ./KRIT1_control.log > KRIT1_control.out
+   58  more log_analysis.py 
+   59  python3 log_analysis.py ./KRIT1_control.log 
+   60  python3 log_analysis.py ./KRIT1_control.log > KRIT1_control.out 
+   61  cd ../../OAZ1_HUM/Controls/
+   62  tail -n +1 *.txt > KRIT1_control.log
+   63  more KRIT1_control.log 
+   64  python3 log_analysis.py ./KRIT1_control.log > OAZ1_control.out 
+   65  more OAZ1_control.out 
+   66  cd ../../PMM2_HUMAN/Controls/
+   67  tail -n +1 *.txt > KRIT1_control.log
+   68  python3 log_analysis.py ./KRIT1_control.log > PMM2_control.out 
+   69  cd ../../STK11_HUMAN/Controls/
+   70  tail -n +1 *.txt > KRIT1_control.log
+   71  python3 log_analysis.py ./KRIT1_control.log > STK11_control.out 
+   72  cd ../../TLE3_HUMAN/Controls/
+   73  tail -n +1 *.txt > TLE3_control.log
+   74  python3 log_analysis.py ./TLE3_control.log > TLE3_control.out 
+   75  cd ..
+   76  cd Control_Summary/
+   77  history | grep tail
+   78  tail -n +1 *.txt
+   79  tail -n +1 *.txt > total_summary.out 
+   80  cd ..
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd HRI\ -\ EIF2AK/
+   85  ls
+   86  cd 607694.all_in_one/
+   87  ls
+   88  cd 607694_models/
+   89  ls
+   90  cd 607694_models/
+   91  ls
+   92  dssp -i 607694_model_1.pdb -o 607694_model_1.cif
+   93  dssp -i 607694_model_1.pdb -o 607694_model_1.dssp
+   94  ls
+   95  pwd
+   96  sudo
+   97  su
+   98  sudo apt-get update 
+   99  sudo apt-get upgrade 
+  100  ls
+  101  cd /mnt/c/
+  102  ls
+  103  cd Users/
+  104  ls
+  105  cd ep635/
+  106  ls
+  107  LS
+  108  ls
+  109  cd Documents/
+  110  mkdir Protein_Predict
+  111  cd Protein_Predict/
+  112  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  113  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+  114  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  115  sudo apt-get update
+  116  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  117  version
+  118  ver
+  119  version
+  120  lsb_release -a
+  121  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  122     $(lsb_release -cs) \
+  123     stable"
+  124  sudo apt-get update
+  125  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  126  pip install alphafold2-pytorch
+  127  sudo apt install python3-pip
+  128  sudo apt-get install ncbi-blast+
+  129  git clone https://github.com/soedinglab/hh-suite.git
+  130  ls
+  131  git clone https://github.com/soedinglab/hh-suite.git
+  132  cd
+  133  git clone https://github.com/soedinglab/hh-suite.git
+  134  mkdir -p hh-suite/build && cd hh-suite/build
+  135  cmake -DCMAKE_INSTALL_PREFIX=. ..
+  136  sudo apt install cmake
+  137  cmake -DCMAKE_INSTALL_PREFIX=. ..
+  138  make -j 4 && make install
+  139  export PATH="$(pwd)/bin:$(pwd)/scripts:$PATH"
+  140  cd ..; mkdir databases; cd databases
+  141  wget http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz
+  142  cd
+  143  pip install alphafold2-pytorch
+  144  history
+  145  pip3 install alphafold2-pytorch
+  146  ls
+  147  pwd
+  148  ls
+  149  cd
+  150  ls
+  151  cd ./.local/bin/
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd /usr/lib/python3/dist-packages/
+  156  ls
+  157  find ./ | grep alpha
+  158  cd ..
+  159  find ./ | grep alpha
+  160  cd
+  161  which alphafold2-pytorch-0.0.5
+  162  who alphafold2-pytorch-0.0.5
+  163  alphafold2-pytorch-0.0.5
+  164  cd
+  165  pwd
+  166  git clone https://github.com/magnusekeberg/plmDCA.git
+  167  mv plmDCA/plmDCA_asymmetric_v2 plmDCA/plmDCA
+  168  ls
+  169  cp plmDCA.m plmDCA/plmDCA_asymmetric_v2/
+  170  cd plmDCA/
+  171  ls
+  172  cd plmDCA/
+  173  ls
+  174  cd ..
+  175  ls
+  176  cd ..
+  177  ls
+  178  cd
+  179  git clone https://github.com/magnusekeberg/plmDCA.git
+  180  ls
+  181  rm -rf plmDCA/
+  182  git clone https://github.com/magnusekeberg/plmDCA.git
+  183  ls
+  184  cd plmDCA/
+  185  ls
+  186  cd plmDCA_asymmetric_v2/
+  187  ls
+  188  cd
+  189  ls
+  190  find ./ | grep plm
+  191  find ./ | grep plmDCA.m
+  192  pwd
+  193  gh repo clone Urinx/alphafold_pytorch
+  194  sudo apt install gitsome
+  195  gh repo clone Urinx/alphafold_pytorch
+  196  wget https://github.com/Urinx/alphafold_pytorch.git
+  197  ls
+  198  git clone https://github.com/Urinx/alphafold_pytorch.git
+  199  ls
+  200  cd alphafold_pytorch/
+  201  ls
+  202  mv ../hh-suite/ ./
+  203  ls
+  204  rm -rg ../plmDCA/
+  205  ls
+  206  git clone https://github.com/magnusekeberg/plmDCA.git
+  207  mv plmDCA/plmDCA_asymmetric_v2 plmDCA/plmDCA
+  208  cp plmDCA.m plmDCA/plmDCA_asymmetric_v2/
+  209  git clone https://github.com/magnusekeberg/plmDCA.git
+  210  rm -rf plmDCA
+  211  ls
+  212  git clone https://github.com/magnusekeberg/plmDCA.git
+  213  cp plmDCA/plmDCA_asymmetric_v2 plmDCA/plmDCA
+  214  cp -r plmDCA/plmDCA_asymmetric_v2 plmDCA/plmDCA
+  215  cp plmDCA.m plmDCA/plmDCA_asymmetric_v2/
+  216  cd plmDCA/plmDCA_asymmetric_v2/functions/; for i in *.c; do octave --eval "mex $i";done
+  217  sudo apt install octave
+  218  cd plmDCA/plmDCA_asymmetric_v2/functions/; for i in *.c; do octave --eval "mex $i";done
+  219  cd
+  220  cd alphafold_pytorch/
+  221  cd plmDCA/plmDCA_asymmetric_v2/functions/; for i in *.c; do octave --eval "mex $i";done
+  222  sudo apt-get install liboctave-dev
+  223  cd
+  224  cd alphafold_pytorch/
+  225  cd plmDCA/plmDCA_asymmetric_v2/functions/; for i in *.c; do octave --eval "mex $i";done
+  226  cd ../3rd_party_code/minFunc/; for i in *.c; do octave --eval "mex $i"; done
+  227  cd
+  228  ls
+  229  cd alphafold_pytorch/
+  230  ls
+  231  cd hh-suite/build/
+  232  export PATH="$(pwd)/bin:$(pwd)/scripts:$PATH"
+  233  ls
+  234  cd ..
+  235  cd ..; mkdir databases; cd databases
+  236  cd hh-suite/build
+  237  cd ..
+  238  cd hh-suite/build
+  239  cd ..; mkdir databases; cd databases
+  240  cd ..
+  241  ls
+  242  cd databases/
+  243  ls
+  244  cd
+  245  cd alphafold_pytorch/
+  246  python alphafold.py -i test_data/T1019s2.pkl -o T1019s2_out -t D -r 0
+  247  python3 alphafold.py -i test_data/T1019s2.pkl -o T1019s2_out -t D -r 0
+  248  ls
+  249  wget http://bit.ly/alphafold-model
+  250  ls
+  251  ls -ls
+  252  mv alphafold-model model.zip
+  253  ls
+  254  unzip model.zip 
+  255  python3 alphafold.py -i test_data/T1019s2.pkl -o T1019s2_out -t D -r 0
+  256  python3 alphafold.py -i test_data/T1019s2.pkl -o Evan_out -t D -r 0
+  257  ls
+  258  cp -r /mnt/c/Users/ep635/Downloads/model/model ./
+  259  ls
+  260  cd model/
+  261  ls
+  262  cd ,,
+  263  cd ..
+  264  python3 alphafold.py -i test_data/T1019s2.pkl -o Evan_out -t D -r 0
+  265  ls
+  266  cd Evan_out/
+  267  ls
+  268  cd Distogram/
+  269  ls
+  270  cd 0
+  271  ls
+  272  cd
+  273  ls
+  274  history
+  275  history | grep git
+  276  git clone https://github.com/PDB-REDO/dssp.git
+  277  ls
+  278  cd dssp
+  279  ks
+  280  ls
+  281  ./configure 
+  282  gcc
+  283  gcc - v
+  284  gcc -v
+  285  GNU
+  286  GNU -v
+  287  cd ..
+  288  git clone https://github.com/PDB-REDO/libcifpp.git
+  289  ls
+  290  cd libcifpp/
+  291  ls
+  292  ./configure 
+  293  sudo apt-get install boost
+  294  sudo apt-get install libboost-all-dev
+  295  ./configure 
+  296  make
+  297  make install
+  298  sudo make install
+  299  cd ..
+  300  ls
+  301  cd dssp
+  302  ./configure 
+  303  cd ..
+  304  ls
+  305  cd libcifpp/
+  306  ls
+  307  sudo make install
+  308  cd ..
+  309  ls
+  310  cd dssp/
+  311  ls
+  312  ./configure 
+  313  install
+  314  ls
+  315  cd
+  316  sudo apt-get install dssp
+  317  sudo apt-get install ksdssp
+  318  cd /mnt/c/Users/ep635/Documents/programms/
+  319  ls
+  320  ./kdssp/shar
+  321  ./kdssp.shar
+  322  ./ksdssp.shar 
+  323  sudo ./ksdssp.shar 
+  324  ls
+  325  cd ksdssp/
+  326  make
+  327  ls
+  328  ksdssp
+  329  ls
+  330  make
+  331  cd /mnt/d/HMS/home/wagner/epapadopoulos/epapadopoulos/projects/eIF4E
+  332  ls
+  333  find ./ | grep report
+  334  find ./ | grep eihab
+  335  find ./ | grep KY
+  336  cd ..
+  337  cd /mnt/c/Users/ep635/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/Docking_KRIT1_A/
+  338  ls
+  339  cd output-files/
+  340  ls
+  341  cd complete/
+  342  ls
+  343  more qvina_report.txt 
+  344  cd /mnt/c/Users/ep635/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/S14L5_HUM/20210517/
+  345  ls
+  346  tar -xvf GACEBF.tar 
+  347  cd GACEBF/
+  348  ls
+  349  gunzip 00000.tar.gz 
+  350  ls
+  351  tar -xvf 00000.tar 
+  352  cd ..
+  353  ls
+  354  tar -xvf GACEBF.tar  -O
+  355  tar -xvf GACEBF.tar  -O 
+  356  ls
+  357  cd GACEBF/
+  358  ls
+  359  tar -xvf 00000.tar -O
+  360  cd ..
+  361  ls
+  362  tar xvf GACECF.tar -O
+  363  tar xvf GA
+  364  cd GACECF/
+  365  ls
+  366  gunzip 00000.tar.gz 
+  367  ls
+  368  tar -xvf 00000.tar -O
+  369  tar -xvf 00000.tar -O | grep  PV-000720782582_1
+  370  tar -xvf 00000.tar -O | grep  'PV-000720782582_1'
+  371  tar -xvf 00000.tar -O | grep -A1 'PV-000720782582_1'
+  372  tar -xvf 00000.tar -O | grep -A1 'PV-000720782582_1'| grep SMILES
+  373  tar xvf 00000.tar -O | grep -A1 'PV-000720782582_1'| grep SMILES
+  374  tar xf 00000.tar -O | grep -A1 'PV-000720782582_1'| grep SMILES
+  375  cd ..
+  376  tar xf GACECF.tar -O| gunzip
+  377  tar xf GACECF.tar -O| gunzip | grep -A1 'PV-000720782582_1'
+  378  tar xf GACECF.tar -O| gunzip 
+  379  tar xf GACECF.tar -O| gunzip | grep  PV-000720782582_1
+  380  tar xf GACECF.tar -O| gunzip 
+  381  ls
+  382  cd GACECF/
+  383  ls
+  384  tar -xvf 00000.tar 
+  385  ls
+  386  tar xf 00000.tar -O | grep -A1 'PV-000720782582_1'| grep SMILES
+  387  cd 00000/
+  388  ls
+  389  cd ..
+  390  tar xf GACECF.tar -O| gunzip 
+  391  tar xf GACECF.tar -O| gunzip | grep ATOM
+  392  tar xf GACECF.tar -O| zgrep ATOM
+  393  tar xf GACECF.tar -O| gunzip
+  394  tar xf GACECF.tar -O| gunzip | grep ATOM
+  395  tar xf GACECF.tar -O| gunzip | grep  -a PV-000720782582_1
+  396  tar xf GACECF.tar -O| gunzip | grep  -a -A1 PV-000720782582_1
+  397  tar xf GACECF.tar -O| gunzip | awk '/PV-000720782582_1/ && ++n == 2, /TORSDOF/' 
+  398  tar xf GACEBG.tar -O| gunzip | awk '/Z2717222271_4/ && ++n == 2, /TORSDOF/' 
+  399  tar xf GACEBG.tar -O| gunzip | awk '/Z2717222271_4/ && ++n == 2, /TORSDOF/'  >Z2717222271_4.pdbqt
+  400  cd /mnt/z
+  401  cd /mnt/
+  402  ls
+  403  cd d/
+  404  ls
+  405  cd 
+  406  cd /mnt/y
+  407  ls
+  408  pwd
+  409  cd /mnt/c/
+  410  ls
+  411  cd /mnt/
+  412  ls
+  413  ls  /mnt/d
+  414  ls  /mnt/d/
+  415  cd  c/
+  416  ls
+  417  ls Users/
+  418  cd
+  419  ls
+  420  ls /
+  421  ls /media/
+  422  ls /etc/fstab 
+  423  cat /etc/fstab 
+  424  ls
+  425  ls ~
+  426  ls /mnt/
+  427  sudo mkdir /mnt/share
+  428  sudo mount -t drvfs '\\rc-stor14.dfci.harvard.edu' /mnt/share
+  429  sudo mount -t drvfs '\\rc-stor14.dfci.harvard.edu/cmitsiades' /mnt/share
+  430  cd /mnt/share/
+  431  ls
+  432  cd cmlab/
+  433  ls
+  434  cd Evangelos/Virtual_Docking/
+  435  ls
+  436  rsync -avz ep202@transfer.orchestra.med.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files_5.tar .
+  437  ping transfer.orchestra.med.harvard.edu
+  438  ping transfer.rc.hms.harvard.edu
+  439  rsync -avz ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files_5.tar ./output_KRIT1_4M.tar
+  440  cp -v  ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files_5.tar ./output_KRIT1_4M.tar
+  441  scp -v  ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files_5.tar ./output_KRIT1_4M.tar
+  442  rsync -av ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  443  rsync -avh --no-perms --no-group -no-owner ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  444  rsync -avh --no-perms --no-group --no-owner ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  445  rsync -ah --no-perms --no-group --no-owner ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  446  sudo rsync -ah --no-perms --no-group --no-owner ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  447  sudo rsync -avh --no-perms --no-group --no-owner ep202@transfer.rc.hms.harvard.edu:/home/ep202/docking/Scratch_ep202/VFVS_KRIT1/output-files .
+  448  history
+  449  history > /mnt/c/Users/ep635/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/programs_scripts/ubuntu_history_20210609.txt

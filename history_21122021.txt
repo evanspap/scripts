@@ -1,0 +1,1000 @@
+  184  ls
+  185  CD ..
+  186  cd ..
+  187  ls -lsr
+  188  ls -lsR
+  189  ls -lsR > /mnt/c/Users/Evangelos/Documents/Stablix/SPR_list.txt
+  190  ls
+  191  history | grep mount
+  192  sudo mount -t drvfs Z: /mnt/z
+  193  ls
+  194  cd /mnt/z/Private/epapadopoulos/docking/mcule/HTS_library/
+  195  ls
+  196  history | grep gunzip
+  197  gunzip mcule_HTS_library_210206.smi.gz
+  198  ls
+  199  history | grep obabel
+  200  ./predict.sh 
+  201  ls
+  202  python3 ../predict.py protein.mol2 protein.pdbqt protein.txt
+  203  history
+  204  exit
+  205  ls
+  206  pwd
+  207  history
+  208  sudo mount -t drvfs Z: /mnt/z
+  209  cd /mnt/z/Private/epapadopoulos/
+  210  ls
+  211  cd docking/
+  212  ls
+  213  mkdir ProteinDescriptor
+  214  ls
+  215  cd ProteinDescriptor/
+  216  ls
+  217  sudo apt-get install git
+  218  pwd
+  219  ls
+  220  cd ProteinDescriptor-master/
+  221  ls
+  222  ./predict.py 
+  223  mkdir Set2
+  224  cd Set2/
+  225  python3
+  226  cd ..
+  227  ls
+  228  cd example2/
+  229  ls
+  230  chmod u+x predict.sh 
+  231  vi pred.s
+  232  chmod u+x pred.sh 
+  233  ls
+  234  ./predict.sh 
+  235  more predict.sh 
+  236  ./predict.sh 
+  237  bash
+  238  history
+  239  ./predict.sh 
+  240  more predict.sh 
+  241  python3 ../predict.py protein.mol2 protein.pdbqt protein.txt
+  242  history
+  243  sudo apt-get install numpy
+  244  sudo apt-get install python3-numpy
+  245  python3 ../predict.py protein.mol2 protein.pdbqt protein.txt
+  246  sudo apt-get install python-sklearn
+  247  sudo pip install scikit-learn
+  248  sudo apt-get install python3-pip
+  249  apt-get update
+  250  sudo apt-get update
+  251  sudo apt-get install python3-pip
+  252  sudo pip install scikit-learn
+  253  python3 ../predict.py protein.mol2 protein.pdbqt protein.txt
+  254  ./predict.sh 
+  255  rm predict.sh 
+  256  vi pred.sh 
+  257  ./pred.sh 
+  258  sudo apt-get install keras
+  259  pip3 install tensorflow
+  260  ./pred.sh 
+  261  sudo apt install python3-tqdm
+  262  ./pred.sh 
+  263  pip3 install keras
+  264  ./pred.sh 
+  265  python ../predict.py protein.mol2 protein.pdbqt 3/5(pocket number) result_file
+  266  python ../predict.py protein.mol2 protein.pdbqt 3 protein.txt
+  267  python3 ../predict.py protein.mol2 protein.pdbqt 3 protein.txt
+  268  pip install keras --upgrade
+  269  pip3 install keras --upgrade
+  270  python3 ../predict.py protein.mol2 protein.pdbqt 3 protein.txt
+  271  pip3 install tensorflow --upgrade
+  272  pip3 install keras --upgrade
+  273  python3 ../predict.py protein.mol2 protein.pdbqt 3 protein.txt
+  274  vi /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/ProteinDescriptor-master/components/descriporConstruction/dataProcess.py
+  275  python3 ../predict.py protein.mol2 protein.pdbqt 3 protein.txt
+  276  vi /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/ProteinDescriptor-master/components/descriporConstruction/dataProcess.py
+  277  python -c 'import keras; print(keras.__version__)'
+  278  python3 -c 'import keras; print(keras.__version__)'
+  279  pip3 install keras==2.3.1
+  280  history
+  281  history | grep mount
+  282  sudo mount -t drvfs Z: /mnt/z
+  283  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/ProteinDescriptor-master/
+  284  ls
+  285  cd example2
+  286  ls
+  287  ./pred.sh 
+  288  python3 -c 'import tensorflow as tf; print(tf.__version__)'
+  289  pip3 install tensorflow==1.14.0
+  290  conda install -c conda-forge tensorflow=1.14
+  291  conda install -c conda-forge tensorflow=1.14.0
+  292  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+  293  clean
+  294  ls
+  295  cls
+  296  ls
+  297  pip3 install tensorflow==1.14.0
+  298  pip3 install tensorflow==2.20
+  299  pip3 install tensorflow==2.2.0
+  300  ./pred.sh 
+  301  ls
+  302  more protein.txt 
+  303  more pred.sh 
+  304  ls
+  305  cd ..
+  306  ls
+  307  cd cd docking/
+  308  ls
+  309  c docking/
+  310  ls
+  311  cd docking/
+  312  ls
+  313  cd ProteinDescriptor/
+  314  ls
+  315  cd ProteinDescriptor-master/
+  316  ls
+  317  cd set1/
+  318  ls
+  319  ls *.txt
+  320  history
+  321  history | grep mount
+  322  sudo mount -t drvfs Z: /mnt/z
+  323  cd /mnt/z/Private/epapadopoulos/docking/proteins/
+  324  gunzip uniprot-yourlist_M202110214ABAA9BC7178C81CEBC9459510EDDEA3245215F.xlsx.gz 
+  325  cd ..
+  326  cd ProteinDescriptor/set1/
+  327  tail -n +1 *.txt
+  328  tail -n +1 *.txt > set1_lingability.txt
+  329  cd ..
+  330  cd /mnt/
+  331  ls
+  332  cd z/
+  333  ls
+  334  cd ..
+  335  history | mount
+  336  history | grep mount
+  337  sudo mount -t drvfs Z: /mnt/z
+  338  ls
+  339  cd z/
+  340  ls
+  341  cd Private/epapadopoulos/docking/ProteinDescriptor/proteins/
+  342  ls
+  343  more list_A.txt 
+  344  man curl
+  345  ls
+  346  more get_alpafold.py 
+  347  python3 get_alpafold.py 
+  348  ls
+  349  gunzip uniprot-yourlist_M202110216320BA52A5CE8FCD097CB85A53697A3524711DI.xlsx.gz
+  350  ls
+  351  python3 get_alpafold.py 
+  352  python3 get_alpafold.py > curl_list_B.txt
+  353  more curl_list_B.txt 
+  354  ls
+  355  ./curl_list_B.txt 
+  356  ls
+  357  history | grep autodock
+  358  history | grep auto
+  359  history
+  360  ls
+  361  ./makepdbqt.sh 
+  362  more makepdbqt.sh 
+  363  vi makepdbqt.sh 
+  364  ./makepdbqt.sh 
+  365  ls
+  366  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  367  gunzip uniprot-yourlist_M202110226320BA52A5CE8FCD097CB85A53697A352475E7O-filtered-rev--.xlsx.gz 
+  368  ls
+  369  gunzip uniprot-yourlist_M20211022A084FC58F6BBA219896F365D15F2EB44243591B_.xlsx.gz
+  370  more list_B.txt 
+  371  more get_alpafold.py 
+  372  python get_alpafold.py 
+  373  python3 get_alpafold.py 
+  374  python3 get_alpafold.py  > curl_alphafold.txt
+  375  more curl_alphafold.txt 
+  376  vi curl_alphafold.txt 
+  377  ./curl_alphafold.txt 
+  378  ls
+  379  sudo apt-get install autodocktools
+  380  sudo apt-get update
+  381  sudo apt-get install autodocktools
+  382  sudo apt-get update
+  383  curl -o https://ccsb.scripps.edu/download/548/
+  384  gunzip mgltools_x86_64Linux2_1.5.6.tar_.gz 
+  385  ls
+  386  ls mgltools_x86_64Linux2_1.5.6.tar_ 
+  387  mv mgltools_x86_64Linux2_1.5.6.tar_ mgltools_x86_64Linux2_1.5.6.tar
+  388  tar -xvf mgltools_x86_64Linux2_1.5.6.tar
+  389  ls
+  390  cd mgltools_x86_64Linux2_1.5.6/
+  391  ls
+  392  more install.sh 
+  393  cd ..
+  394  ls
+  395  mkdir /mnt/c/mgltools
+  396  mv mgltools_x86_64Linux2_1.5.6 /mnt/c/mgltools/
+  397  ls
+  398  cd /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/
+  399  ls
+  400  ./install.sh 
+  401  ls
+  402  more README 
+  403  ls
+  404  cd Tools/
+  405  ls
+  406  cd ..
+  407  cd ,,
+  408  cd ..
+  409  ls
+  410  cd mgltools_x86_64Linux2_1.5.6/
+  411  ls
+  412  ./install.sh 
+  413  ls
+  414  gunzip MGLToolsPckgs.tar.gz 
+  415  ls
+  416  tar -xvf MGLToolsPckgs.tar 
+  417  cd MGLToolsPckgs/AutoDockTools/Utilities24/
+  418  ls
+  419  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  420  ls
+  421  ./makepdbqt.sh 
+  422  vi makepdbqt.sh 
+  423  ./makepdbqt.sh 
+  424  vi makepdbqt.sh 
+  425  ./makepdbqt.sh 
+  426  python3 /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py 
+  427  ./makepdbqt.sh 
+  428  ls
+  429  python3 /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r AK2.pdb -A hydrogens
+  430  sudo apt-get install python
+  431  python /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r AK2.pdb -A hydrogens
+  432  ./makepdbqt.sh 
+  433  ls
+  434  vi makepdbqt.sh 
+  435  ./makepdbqt.sh 
+  436  cd /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/
+  437  ls
+  438  ./install.sh 
+  439  ls
+  440  cd MGLToolsPckgs/
+  441  ls
+  442  cd AutoDockTools/
+  443  ls
+  444  cd Utilities24/
+  445  ls
+  446  more prepare_receptor.py 
+  447  python prepare_receptor4.py 
+  448  pip install MolKit
+  449  pip3 install MolKit
+  450  pip install MolKit
+  451  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  452  conda install -c bioconda mgltools
+  453  cd ../programs_scripts/
+  454  ls
+  455  cp -r mgltools_i86Linux2_1.5.2 /mnt/c/mgltools/
+  456  cd /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/
+  457  ls
+  458  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  459  ls
+  460  ./makepdbqt.sh 
+  461  ls
+  462  more makepdbqt.sh 
+  463  ls
+  464  ./makepdbqt.sh 
+  465  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py
+  466  cd /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/
+  467  ls
+  468  more prepare_receptor4.py 
+  469  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  470  ls
+  471  cd set2/
+  472  ls
+  473  more pred.sh 
+  474  ./pred.sh 
+  475  ls
+  476  cd /mnt/z/
+  477  ls
+  478  cd ..
+  479  history | grep mount
+  480  sudo mount -t drvfs Z: /mnt/z
+  481  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/
+  482  ls
+  483  cd set1/
+  484  ls
+  485  cd ..
+  486  ls
+  487  cd set2
+  488  mkdir set2
+  489  cd set2
+  490  ls
+  491  cd ../proteins/SetA_19/
+  492  ls
+  493  ./pred.sh 
+  494  history | grep mount
+  495  sudo mount -t drvfs Z: /mnt/z
+  496  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/SetA_19/
+  497  ./pred.sh 
+  498  cd ..
+  499  ls
+  500  python move_alpafold.py 
+  501  python move_alpafold.py > move_list_B.sh
+  502  ls
+  503  cd Set1
+  504  ls
+  505  cd ..
+  506  cd set1
+  507  ls
+  508  ./move_list_B.sh 
+  509  ls
+  510  history | grep mmv
+  511  cd ..
+  512  ls
+  513  cd proteins/
+  514  ls
+  515  python move_alpafold.py > move_list_B.sh
+  516  cp move_list_B.sh ../set1/
+  517  python move_alpafold.py > move_list_B.sh
+  518  cp move_list_B.sh ../set1/
+  519  ls
+  520  cd done/
+  521  ls
+  522  python sumary_out_lines.py 
+  523  more sumary_out_lines.py 
+  524  python sumary_out_lines.py 
+  525  python3 sumary_out_lines.py 
+  526  more total_summary.out 
+  527  more sumary_out_lines.py 
+  528  python3 sumary_out_lines.py 
+  529  python3 sumary_out_lines_01.py 
+  530  python3 sumary_out_lines.py 
+  531  more sumary_out_lines.py 
+  532  more total_summary.out 
+  533  ls
+  534  more sumary_out_lines.py 
+  535  python3 sumary_out_lines.py 
+  536  python3 sumary_out_lines.py > summary_lines.out
+  537  cd ..
+  538  cd Shared/Research/Stablix\ Research/Biomolecular\ Sciences/Constructs/
+  539  ls
+  540  gunzip  All_DUBS.fasta.gz 
+  541  ls
+  542  more All_DUBS.fasta 
+  543  ls
+  544  python fasta_lines.py All_DUBS.fasta 
+  545  python3 fasta_lines.py All_DUBS.fasta 
+  546  python3 fasta_lines.py All_DUBS.fasta > All_DUBS_lines.fasta 
+  547  python3 fasta_lines.py All_DUBS.fasta 
+  548  more fasta_lines.py 
+  549  more fasta_lines.py > All_DUBS_lines.fasta 
+  550  python3 fasta_lines.py All_DUBS.fasta > All_DUBS_lines.fasta 
+  551  python3 fasta_lines.py All_DUBS.fasta 
+  552  python3 fasta_lines.py All_DUBS.fasta > All_DUBS_lines.fasta 
+  553  python3 fasta_lines_fasta.py All_DUBS_lines.txt 
+  554  python3 fasta_lines_fasta.py All_DUBS_lines.txt >All_DUBS_final.fasta
+  555  more All_DUBS_final.fasta 
+  556  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  557  ls
+  558  cd set2/
+  559  ./pred.sh 
+  560  history | grep mount
+  561  sudo mount -t drvfs Z: /mnt/z
+  562  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/
+  563  ls
+  564  cd done/
+  565  ls
+  566  history | grep tail
+  567  tail -n +1 *.txt > 20211027_drugability.list
+  568  more 20211027_drugability.list 
+  569  cd ../set2
+  570  ls
+  571  ./pred.sh 
+  572  conda
+  573  conda install mgltools
+  574  sudo apt-get install mgltools-molkit
+  575  history
+  576  history | grep mount
+  577  sudo mount -t drvfs Z: /mnt/z
+  578  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_PDB4PYZ/
+  579  more pred.sh 
+  580  ./pred.sh 
+  581  history | grep numpy
+  582  sudo apt-get install python3-numpy
+  583  ./pred.sh
+  584  exit
+  585  history | grep mount
+  586  sudo mount -t drvfs Z: /mnt/z
+  587  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_PDB4PYZ/
+  588  ./pred.sh 
+  589  vi pred.sh 
+  590  ./pred.sh 
+  591  history | grep numpy
+  592  sudo apt-get install numpy
+  593  conda install numpy
+  594  sudo apt-get install numpy
+  595  rm -rf ~/miniconda
+  596  sudo apt-get install numpy
+  597  ./pred.sh 
+  598  vi pred.sh 
+  599  ./pred.sh 
+  600  more pred.sh 
+  601  python3
+  602  pip3 install numpy
+  603  pip install numpy
+  604  bash
+  605  conda
+  606  conda update
+  607  ls
+  608  pwd
+  609  ls
+  610  history | grep mount
+  611  sudo mount -t drvfs Z: /mnt/z
+  612  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_PDB4PYZ/
+  613  ls
+  614  ./pred.sh 
+  615  ls
+  616  ./pred.sh 
+  617  cd ../test/
+  618  ls
+  619  ./pred.sh 
+  620  cd ../USP7_PDB4PYZ/
+  621  ./pred.sh 
+  622  ls
+  623  more USP7_4PYZ.txt 
+  624  history | grep mount
+  625  sudo mount -t drvfs Z: /mnt/z
+  626  ls
+  627  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_all/
+  628  ls
+  629  ./pred.sh 
+  630  history | grep mount
+  631  history| tail 
+  632  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/
+  633  cd USP7_cmpds/
+  634  history | grep obabel
+  635  history | grep mol2
+  636  obabel -ipdbqt UBP7.pdbqt -O UBP7.mol2
+  637  ls
+  638  ./pred.sh 
+  639  ls
+  640  rm UBP7.mol2 
+  641  ls
+  642  obabel -ipdbqt *.pdbqt -O *.mol2
+  643  ./pred.sh 
+  644  more pred.sh 
+  645  more /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/predict.py
+  646  grep arg /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/predict.py
+  647  more pred.sh 
+  648  grep top_pocket /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/predict.py
+  649  cd ..
+  650  ls
+  651  pwd
+  652  ls s
+  653  ls -ls
+  654  pwd
+  655  ls
+  656  history | grep mount
+  657  sudo mount -t drvfs Z: /mnt/z
+  658  ls
+  659  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_cmp25/
+  660  ls
+  661  obabel -ipdbqt *.pdbqt -O *.mol2
+  662  ./pred.sh 
+  663  ls
+  664  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_cmp25
+  665  ls
+  666  sudo mount -t drvfs Z: /mnt/z
+  667  ls
+  668  cd cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_cmp25
+  669  cd /mnt/z/Private/epapadopoulos/docking/ProteinDescriptor/proteins/USP7_cmp25
+  670  ls
+  671  ./pred.sh 
+  672  ls
+  673  history | grep mount
+  674  sudo mount -t drvfs Z: /mnt/z
+  675  cd /mnt/z/Shared/Research/Stablix\ Research/Chemistry/Information\ Sharing/Docking/USP5/
+  676  ls
+  677  cp USP5\ docking\ test.sdf ./test/
+  678  cd ./test/
+  679  ls
+  680  rm USP5_.pdbqt 
+  681  history | grep obabel
+  682  ls
+  683  rm USP5\ docking\ test.sdf 
+  684  obabel ../USP5\ docking\ test.sdf -osdf --split
+  685  ls
+  686  obabel -sdf *.sdf -O *.pdbqt -partialcharges gasteiger --gen3d
+  687  obabel -isdf *.sdf -O *.pdbqt -partialcharges gasteiger --gen3d
+  688  history | grep charges
+  689  obabel -isdf *.sdf -O *.pdbqt -partialcharges gasteiger --gen3d
+  690  ls
+  691  cd ../test2/
+  692  ls
+  693  history | grep tail
+  694  tail -n +1 *.txt > test2_docking.list
+  695  obabel
+  696  history | grap mount
+  697  history | grep mount
+  698  sudo mount -t drvfs Z: /mnt/z
+  699  cd /mnt/z/Shared/Research/Stablix\ Research/Chemistry/Information\ Sharing/Docking/USP5/
+  700  ls
+  701  mkdir test3
+  702  cp USP5 docking test.smi ./test3/
+  703  cp 'USP5 docking test.smi' ./test3/USP5 docking test.smi
+  704  cd test3/
+  705  ls
+  706  cd ..
+  707  cp 'USP5 docking test.smi' ./test3/
+  708  cd test3/
+  709  ls
+  710  more USP5\ docking\ test.smi 
+  711  ls
+  712  history | grep pdbqt
+  713  obabel -ismi USP5\ docking\ test.smi -O *.pdbqt -partialcharges gasteiger --gen3d
+  714  ls
+  715  more USP5\ docking\ test.pdbqt 
+  716  obabel -ismi STX-000354.smi -O *. --split
+  717  ls
+  718  more STX-000354.smi 
+  719  obabel -ismi STX-000354.smi -O *.pdbqt -partialcharges eem --gen3d
+  720  ls
+  721  ls *pdbqt
+  722  obabel -ismi STX-000354.smi -O STX-000354.pdbqt -partialcharges eem --gen3d
+  723  ls
+  724  more STX-000354.pdbqt
+  725  obabel -ismi STX-000354.smi -O STX-000354.pdbqt --partialcharges eem --gen3d
+  726  more STX-000354.pdbqt
+  727  obabel -ismi STX-000354.smi -O STX-000354.pdbqt -p 7 --partialcharge eem --gen3d
+  728  more STX-000354.pdbqt
+  729  obabel -ismi *.smi -O *.pdbqt -p 7 --partialcharge eem --gen3d
+  730  ls
+  731  history | grep tail
+  732  tail -n +1 *.txt > USP5_ZnF_test3.list
+  733  more USP5_ZnF_test3.list 
+  734  cd /mnt/c/Users/Evangelos/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/MMSEG_ranked/done/
+  735  ls
+  736  more ./sumary_out_lines.py 
+  737  python ./sumary_out_lines.py 20211027_drugability.list 
+  738  python3 ./sumary_out_lines.py 20211027_drugability.list 
+  739  more ./sumary_out_lines.py 
+  740  pwd
+  741  more ./sumary_out_lines.py 
+  742  more ./sumary_out_lines_02.py 
+  743  python3 ./sumary_out_lines_02.py 20211027_drugability.list 
+  744  python3 ./sumary_out_lines_02.py 20211027_drugability.list > 20211027_drugability.out
+  745  history | grep tail
+  746  tail -n +1 *.txt > 20211110_drugability.list
+  747  more 20211110_drugability.list 
+  748  python3 ./sumary_out_lines_02.py 20211110_drugability.list 
+  749  python3 ./sumary_out_lines_02.py 20211110_drugability.list > 20211110_drugability.out
+  750  cd /mnt/z/Shared/Research/Stablix\ Research/Chemistry/Information\ Sharing/Docking/USP5/test3
+  751  ls
+  752  cd
+  753  history | grep mount
+  754  sudo mount -t drvfs Z: /mnt/z
+  755  cd /mnt/z/Shared/Research/Stablix Research/Chemistry/Information Sharing/Docking/USP5/test3
+  756  cd /mnt/z/Shared/Research/Stablix Research/Chemistry/Information Sharing/Docking/USP5/test3/
+  757  cd /mnt/z/Shared/Research/Stablix\ Research/Chemistry/Information\ Sharing/Docking/USP5/test3/
+  758  ls
+  759  history | gre tail
+  760  history | grep tail
+  761  tail -n +1 *.txt > dock_USP5_ZnF_test3.list
+  762  cd /mnt/c/Users/Evangelos/Documents/
+  763  curl https://traianou.gr/2021/11/ragnarok-2.html
+  764  curl https://traianou.gr/2021/11/ragnarok-2.html > rangarok-2.html
+  765  history | grep mount
+  766  ls
+  767  cd /mnt/z/Shared/Research/Stablix\ Research/Chemistry/Information\ Sharing/Docking/USP5/test3/
+  768  ls
+  769  obabel -ismi *.smi -o svg
+  770  ls
+  771  history | grep obabel
+  772  obabel -ismi *.smi -O *.svg
+  773  ls
+  774  obabel -ismi *.smi -O *.svg
+  775  obabel -isdf ../USP5\ docking\ test.sdf -m -O *.svg
+  776  history | grep obabel
+  777  history | grep obabel | grep sdf
+  778  obabel -isvg ../USP5_docking_test.svg -osvg --slpit
+  779  obabel -isvg ../USP5_docking_test.svg -O dummy.svg --slpit
+  780  obabel ../USP5_docking_test.svg -O dummy.svg --slpit
+  781  obabel -isvg ../USP5_docking_test.svg -O dummy.svg --slpit
+  782  ls
+  783  history | grep obabel | grep sdf
+  784  history | grep obabel 
+  785  history | grep obabel | grep svg
+  786  cd ../test
+  787  ls
+  788  obabel -isdf *.sdf -O *.svg
+  789  history | grep obabel | grep pdbqt
+  790  history | grep prepare
+  791  python /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py
+  792  python3 /mnt/c/mgltools/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py
+  793  cd ../test6/
+  794  obabel -ismi *.smi -opdb -m --gen3d best -p
+  795  history | grep pdbqt
+  796  obabel -ismi *.smi -O *.pdbqt -m -d  --partialcharge gasteiger --gen3d
+  797  obabel -ismi *.smi -O dummy.pdbqt -d  --partialcharge gasteiger --gen3d
+  798  obabel -ismi *.smi -opdbqt -d  --partialcharge gasteiger --gen3d
+  799  obabel -ismi *.smi -O pdbqt -d  --partialcharge gasteiger --gen3d
+  800  obabel -ismi *.smi -O .pdbqt -d  --partialcharge gasteiger --gen3d
+  801  obabel -ismi *smi -O *pdbqt -d  --partialcharge gasteiger --gen3d
+  802  history | grep smi
+  803  obabel -ismi *.smi -O *.pdbqt -d  --partialcharge gasteiger --gen3d
+  804  xeyes
+  805  sudo apt install x11-apps
+  806  cd /mnt/z/
+  807  ls
+  808  history | grep mount
+  809  ls
+  810  cd /mnt/z/
+  811  ls
+  812  cd Private/epapadopoulos/Constructs/
+  813  cd Orders/Confirmed_Orders/
+  814  ls
+  815  pkunzip
+  816  gunzip * ./Nov_2021/
+  817  unzip “*.zip”
+  818  gunzip “*.zip”
+  819  sudo apt install unzip
+  820  gunzip “*.zip”
+  821  unzip “*.zip”
+  822  unzip *.zip
+  823  ls
+  824  unzip '*.zip'
+  825  cd Nov_2021/
+  826  ls
+  827  cd ..
+  828  unzip -t '*.zip'
+  829  unzip -t '*.zip' > list.txt
+  830  history | grep mv
+  831  history | grep mount
+  832  sudo mount -t drvfs Z: /mnt/z
+  833  cd /mnt/z/Private/epapadopoulos/Constructs/Orders/Confirmed_Orders/Nov_2021/
+  834  cd 2
+  835  ls
+  836  for f in *; do mv "$f" "${f:2}"; done
+  837  ls
+  838  cd ../3
+  839  ls
+  840  for f in *; do mv "$f" "${f:3}"; done
+  841  ls
+  842  cd ..
+  843  ls
+  844  ls > list_02.out 
+  845  cd New\ folder/
+  846  ls > list_03.out 
+  847  cd ../Rename/
+  848  ls
+  849  mv GST-TEV_USP7_CD_207-1102_pGEX-4T-1.gb GST_TEV_USP7_CD_207-1102_pGEX-4T-1.gb
+  850  ls GST_TEV_USP7_CD_207-1102_pGEX-4T-1.gb
+  851  mv GST-TEV_USP7_CD_207-1102_pGEX-4T-1.gb GST_TEV_USP7_CD_207-1102_pGEX-4T-1.gb
+  852  mv GST-TEV_USP7_FL_1-1102_pGEX-4T-1.gb GST_TEV_USP7_FL_1-1102_pGEX-4T-1.gb
+  853  mv GST4T.1_3C_P53-94-291_324-356_Y220C_pGEX-4T-1.gb GST4T.1_3C_P53-94-291_324-356_Y220C_pGEX-4T-1.gb
+  854  mv GST4T.1_3C_P53-94-291_324-356_pGEX-4T-1.gb GST4T.1_3C_P53-94-291_324-356_pGEX-4T-1.gb
+  855  mv GST4T.1_3C_P53-94-312_Y220C.gb GST4T.1_3C_P53-94-312_Y220C_pGEX-4T-1.gb
+  856  mv GST4T.1_3C_P53-94-312_pGEX-4T-1.gb GST4T.1_3C_P53-94-312_pGEX-4T-1.gb
+  857  mv GST4T.1_3C_P53-94-356_Y220C.gb GST4T.1_3C_P53-94-356_Y220C_pGEX-4T-1.gb
+  858  mv GST4T.1_3C_P53-94-356_pGEX-4T-1.gb GST4T.1_3C_P53-94-356_pGEX-4T-1.gb
+  859  mv GST_3C_P53_1-393_Y220C_pGEX-4T-1.gb GST_3C_P53_1-393_Y220C_pGEX-4T-1.gb
+  860  mv GST_3C_P53_1-393_pGEX_4T-1.gb GST_3C_P53_1-393_pGEX_4T-1.gb
+  861  mv GST_TEV_USP5_1-858_pGEX-4T-1.gb GST_TEV_USP5_1-858_pGEX-4T-1.gb
+  862  mv His_AVI_3C_P53-94-291_324-356_Y220C_pET-28a(+).gb His_AVI_3C_P53-94-291_324-356_Y220C_pET-28a(+).gb
+  863  mv His_AVI_3C_P53-94-291_324-356_pET-28a(+).gb His_AVI_3C_P53-94-291_324-356_pET-28a(+).gb
+  864  mv His_AVI_3C_P53-94-312_Y220C_pET-28a(+).gb His_AVI_3C_P53-94-312_Y220C_pET-28a(+).gb
+  865  mv His_AVI_3C_P53-94-312_pET-28a(+).gb His_AVI_3C_P53-94-312_pET-28a(+).gb
+  866  mv His_AVI_3C_P53-94-356_Y220C_pET-28a(+).gb His_AVI_3C_P53-94-356_Y220C_pET-28a(+).gb
+  867  mv His_AVI_3C_P53-94-356_pET-28a(+).gb His_AVI_3C_P53-94-356_pET-28a(+).gb
+  868  mv His_AVI_3C_P53_1-393_Y220C_pET-28a(+).gb His_AVI_3C_P53_1-393_Y220C_pET-28a(+).gb
+  869  mv His_AVI_3C_P53_1-393_pET-28a(+).gb His_AVI_3C_P53_1-393_pET-28a(+).gb
+  870  mv His_AVI_3C_USP10_383-798_pET-28a(+).gb His_AVI_3C_USP10_383-798_pET-28a(+).gb
+  871  mv His_AVI_3C_USP11_77-488_pET-28a(+).gb His_AVI_3C_USP11_77-488_pET-28a(+).gb
+  872  mv His_AVI_3C_USP11_77-938_pET-28a(+).gb His_AVI_3C_USP11_77-938_pET-28a(+).gb
+  873  mv His_AVI_TEV_AMSH_244-424_pET-28a(+).gb His_AVI_TEV_AMSH_244-424_pET-28a(+).gb
+  874  mv His_AVI_TEV_AMSH_FL_pET-28a(+).gb His_AVI_TEV_AMSH_FL_pET-28a(+).gb
+  875  mv His_AVI_TEV_BAX_G67R_pET28(+).gb His_AVI_TEV_BAX_G67R_pET-28a(+).gb
+  876  mv His_AVI_TEV_BAX_P168G_pET28(+).gb His_AVI_TEV_BAX_P168G_pET-28a(+).gb
+  877  mv His_AVI_TEV_BAX_W139A_pET28(+).gb His_AVI_TEV_BAX_W139A_pET-28a(+).gb
+  878  mv His_AVI_TEV_BAX_WT_pET-28a(+).gb His_AVI_TEV_BAX_WT_pET-28a(+).gb
+  879  mv His_AVI_TEV_BRD7_129-250_pET-28a(+).gb His_AVI_TEV_BRD7_129-250_pET-28a(+).gb
+  880  mv His_AVI_TEV_DHFR_E_coli_pET-28a(+).gb His_AVI_TEV_DHFR_E_coli_pET-28a(+).gb
+  881  mv His_AVI_TEV_FKBP12 (F36V).gb His_AVI_TEV_FKBP12 (F36V).gb
+  882  mv His_AVI_TEV_FKBP_WT_pET-28a(+).gb His_AVI_TEV_FKBP_WT_pET-28a(+).gb
+  883  mv His_AVI_TEV_MTH1_42-197_pET-28a(+).gb His_AVI_TEV_MTH1_42-197_pET-28a(+).gb
+  884  mv His_AVI_TEV_OTUB1_25-271_pET-28a(+).gb His_AVI_TEV_OTUB1_25-271_pET-28a(+).gb
+  885  mv His_AVI_TEV_OTUD1_287-437_pET-28a(+).gb His_AVI_TEV_OTUD1_287-437_pET-28a(+).gb
+  886  mv His_AVI_TEV_OTUD7B_128-438_pET-28a(+).gb His_AVI_TEV_OTUD7B_128-438_pET-28a(+).gb
+  887  mv His_AVI_TEV_UCHL3_FL_pET-28a(+).gb His_AVI_TEV_UCHL3_FL_pET-28a(+).gb
+  888  mv His_AVI_TEV_USP13_22-863_pET-28a(+).gb His_AVI_TEV_USP13_22-863_pET-28a(+).gb
+  889  mv His_AVI_TEV_USP15_CD_275-981_pET-28a(+).gb His_AVI_TEV_USP15_CD_275-981_pET-28a(+).gb
+  890  mv His_AVI_TEV_USP15_FL_pET-28a(+).gb His_AVI_TEV_USP15_FL_pET-28a(+).gb
+  891  mv His_AVI_TEV_USP19_115-1256_pET-28a(+).gb His_AVI_TEV_USP19_115-1256_pET-28a(+).gb
+  892  mv His_AVI_TEV_USP19_115-878_985-1216_pET-28a(+).gb His_AVI_TEV_USP19_115-878_985-1216_pET-28a(+).gb
+  893  mv His_AVI_TEV_USP19_495-1216_pET-28a(+).gb His_AVI_TEV_USP19_495-1216_pET-28a(+).gb
+  894  mv His_AVI_TEV_USP19_495-1256_pET-28a(+).gb His_AVI_TEV_USP19_495-1256_pET-28a(+).gb
+  895  mv His_AVI_TEV_USP19_495-677_1056-1216_pET-28a(+).gb His_AVI_TEV_USP19_495-677_1056-1216_pET-28a(+).gb
+  896  mv His_AVI_TEV_USP19_495-878_985-1216_pET-28a(+).gb His_AVI_TEV_USP19_495-878_985-1216_pET-28a(+).gb
+  897  mv His_AVI_TEV_USP19_495-878_985-1256_pET-28a(+).gb His_AVI_TEV_USP19_495-878_985-1256_pET-28a(+).gb
+  898  mv His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb
+  899  mv His_AVI_TEV_USP28_1-703_pET-28a(+).gb His_AVI_TEV_USP28_1-703_pET-28a(+).gb
+  900  mv His_AVI_TEV_USP28_CD_149-703_pET-28a(+).gb His_AVI_TEV_USP28_CD_149-703_pET-28a(+).gb
+  901  mv His_AVI_TEV_USP28_FL_pET-28a(+).gb His_AVI_TEV_USP28_FL_pET-28a(+).gb
+  902  mv His_AVI_TEV_USP2_CD_258-605_SSG_pET-28a(+).gb His_AVI_TEV_USP2_CD_258-605_SSG_pET-28a(+).gb
+  903  mv His_AVI_TEV_USP30_65-181_215-362_430_517_pET-28a(+).gb His_AVI_TEV_USP30_65-181_215-362_430_517_pET-28a(+).gb
+  904  mv His_AVI_TEV_USP30_65-360_pET-28a(+).gb His_AVI_TEV_USP30_65-360_pET-28a(+).gb
+  905  mv His_AVI_TEV_USP30_65-372_430-517_pET-28a(+).gb His_AVI_TEV_USP30_65-372_430-517_pET-28a(+).gb
+  906  mv His_AVI_TEV_USP30_65-517_pET-28a(+).gb His_AVI_TEV_USP30_65-517_pET-28a(+
+  907  mv His_AVI_TEV_USP47_1027-1347_pET-28a(+).gb His_AVI_TEV_USP47_1027-1347_pET-28a(+).gb
+  908  mv His_AVI_TEV_USP47_186-425_pET-28a(+).gb His_AVI_TEV_USP47_186-425_pET-28a(+).gb
+  909  mv His_AVI_TEV_USP47_186-579_pET-28a(+).gb His_AVI_TEV_USP47_186-579_pET-28a(+).gb
+  910  mv His_AVI_TEV_USP47_186-831_pET-28a(+).gb His_AVI_TEV_USP47_186-831_pET-28a(+).gb
+  911  mv His_AVI_TEV_USP7_207-882_pET-28a(+).gb His_AVI_TEV_USP7_207-882_pET-28a(+).gb
+  912  mv His_AVI_TEV_USP7_537-793_pET-28a(+).gb His_AVI_TEV_USP7_537-793_pET-28a(+).gb
+  913  mv His_AVI_TEV_USP8_734-1110_pET-28a(+).gb His_AVI_TEV_USP8_734-1110_pET-28a(+).gb
+  914  mv His_AVI_TEV_USP8_FL_pET-28a(+).gb His_AVI_TEV_USP8_FL_pET-28a(+).gb
+  915  mv His_AVI_TEV_WDR48_1-677_pET-28a(+).gb His_AVI_TEV_WDR48_1-677_pET-28a(+).gb
+  916  mv His_AVI_TEV_WDR48_2-580_pET-28a(+).gb His_AVI_TEV_WDR48_2-580_pET-28a(+).gb
+  917  mv His_Avi_TEV_BRD9_134-239_pET-28a(+).gb His_Avi_TEV_BRD9_134-239_pET-28a(+).gb
+  918  mv His_Avi_TEV_USP5_1-858_pET-28a(+).gb His_Avi_TEV_USP5_1-858_pgb
+  919  mv His_Avi_TEV_USP5_171-290_pET-28a(+).gb His_Avi_TEV_USP5_171-290_pET
+  920  mv His_Avi_TEV_USP7_CD_560-1084_pET-28a(+).gb His_Avi_TEV_USP7_CD_560-1084_pET-28a(+).gb
+  921  mv His_Avi_TEV_USP7_CD_560-793_pET-28a(+).gb His_Avi_TEV_USP7_CD_560-793_pET-28a(+).gb
+  922  mv His_Avi_TEV_USP7_CD_891-1084_pET-28a(+).gb His_Avi_TEV_USP7_CD_891-1084_pET-28a(+).gb
+  923  mv His_TEV_AVI_USP2_CD_258-605_pET-28a(+).gb His_TEV_AVI_USP2_CD_258-605_pET-28a(+).gb
+  924  mv SSG_His_AVI_TEV_DHFR(E coli)_pET-28a(+).gb SSG_His_AVI_TEV_DHFR(E coli)_pET-28a(+).gb
+  925  mv SSG_His_AVI_TEV_FKBP12 (F36V)_pET-28a(+).gb SSG_His_AVI_TEV_FKBP12 (F36V)_pET-28a(+).gb
+  926  mv SSG_His_AVI_TEV_FKBP_WT_pET-28a(+).gb SSG_His_AVI_TEV_FKBP_WT_pET-28a(+).gb
+  927  mv SSG_His_AVI_TEV_MTH1_42-197_pET-28a(+).gb SSG_His_AVI_TEV_MTH1_42-197_pET-28a(+).gb
+  928  mv SSG_His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb SSG_His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb
+  929  mv SSG_His_AVI_TEV_USP7_FL_1-1102 _pET28a.gb SSG_His_AVI_TEV_USP7_FL_1-1102_pET28a.gb
+  930  mv SSG_His_Avi_TEV_USP7_CD_207-1102_pET-28a(+).gb SSG_His_Avi_TEV_USP7_CD_207-1102_pET-28a(+).gb
+  931  mv SSG_His_USP7_CD_207-1102_pET-28a(+).gb SSG_His_USP7_CD_207-1102_pE
+  932  mv USP2_CD_258-605_AVI_TEV_His_pET-28a(+).gb USP2_CD_258-605_AVI_TEV_His_pET-28a(+).gb
+  933  mv USP2_CD_258-605_TEV_AVI_His_pET-28a(+).gb USP2_CD_258-605_TEV_AVI_His_pET-28a(+).gb
+  934  mv His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb His-Avi-Tev_USP7_CD_207-1102
+  935  mv His-TEV-Avi_USP7_CD_207-1102_pGEX-4T-1.gb His-TEV-Avi_USP7_CD_207-1102_pGEX-4T-1.gb
+  936  mv His-TEV-Avi_USP7_FL_1-1102_pGEX-4T-1.gb His-TEV-Avi_USP7_FL_1-1102_pGEX-4T-1.gb
+  937  mv His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb
+  938  mv His_Avi_TEV_USP2_FL_1-605_pET-28a(+).gb His_Avi_TEV_USP2_FL_1-605_pET-28a(+).gb
+  939  mv New_His-Avi-TEV_USP7_FL_1-1102_pET-28a(+).gb His-Avi-TEV_USP7_FL_1-1102_pET-28a(+).gb
+  940  mv New_His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb New_His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb
+  941  mv New_His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb New_His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb
+  942  ls
+  943  mv 'GST-TEV_USP7_CD_207-1102_pGEX-4T-1.gb' 'GST_TEV_USP7_CD_207-1102_pGEX-4T-1.gb'
+  944  mv 'GST-TEV_USP7_FL_1-1102_pGEX-4T-1.gb' 'GST_TEV_USP7_FL_1-1102_pGEX-4T-1.gb'
+  945  mv 'GST4T.1_3C_P53-94-291_324-356_Y220C_pGEX-4T-1.gb' 'GST4T.1_3C_P53-94-291_324-356_Y220C_pGEX-4T-1.gb'
+  946  mv 'GST4T.1_3C_P53-94-291_324-356_pGEX-4T-1.gb' 'GST4T.1_3C_P53-94-291_324-356_pGEX-4T-1.gb'
+  947  mv 'GST4T.1_3C_P53-94-312_Y220C.gb' 'GST4T.1_3C_P53-94-312_Y220C_pGEX-4T-1.gb'
+  948  mv 'GST4T.1_3C_P53-94-312_pGEX-4T-1.gb' 'GST4T.1_3C_P53-94-312_pGEX-4T-1.gb'
+  949  mv 'GST4T.1_3C_P53-94-356_Y220C.gb' 'GST4T.1_3C_P53-94-356_Y220C_pGEX-4T-1.gb'
+  950  mv 'GST4T.1_3C_P53-94-356_pGEX-4T-1.gb' 'GST4T.1_3C_P53-94-356_pGEX-4T-1.gb'
+  951  mv 'GST_3C_P53_1-393_Y220C_pGEX-4T-1.gb' 'GST_3C_P53_1-393_Y220C_pGEX-4T-1.gb'
+  952  mv 'GST_3C_P53_1-393_pGEX_4T-1.gb' 'GST_3C_P53_1-393_pGEX_4T-1.gb'
+  953  mv 'GST_TEV_USP5_1-858_pGEX-4T-1.gb' 'GST_TEV_USP5_1-858_pGEX-4T-1.gb'
+  954  mv 'His_AVI_3C_P53-94-291_324-356_Y220C_pET-28a(+).gb' 'His_AVI_3C_P53-94-291_324-356_Y220C_pET-28a(+).gb'
+  955  mv 'His_AVI_3C_P53-94-291_324-356_pET-28a(+).gb' 'His_AVI_3C_P53-94-291_324-356_pET-28a(+).gb'
+  956  mv 'His_AVI_3C_P53-94-312_Y220C_pET-28a(+).gb' 'His_AVI_3C_P53-94-312_Y220C_pET-28a(+).gb'
+  957  mv 'His_AVI_3C_P53-94-312_pET-28a(+).gb' 'His_AVI_3C_P53-94-312_pET-28a(+).gb'
+  958  mv 'His_AVI_3C_P53-94-356_Y220C_pET-28a(+).gb' 'His_AVI_3C_P53-94-356_Y220C_pET-28a(+).gb'
+  959  mv 'His_AVI_3C_P53-94-356_pET-28a(+).gb' 'His_AVI_3C_P53-94-356_pET-28a(+).gb'
+  960  mv 'His_AVI_3C_P53_1-393_Y220C_pET-28a(+).gb' 'His_AVI_3C_P53_1-393_Y220C_pET-28a(+).gb'
+  961  mv 'His_AVI_3C_P53_1-393_pET-28a(+).gb' 'His_AVI_3C_P53_1-393_pET-28a(+).gb'
+  962  mv 'His_AVI_3C_USP10_383-798_pET-28a(+).gb' 'His_AVI_3C_USP10_383-798_pET-28a(+).gb'
+  963  mv 'His_AVI_3C_USP11_77-488_pET-28a(+).gb' 'His_AVI_3C_USP11_77-488_pET-28a(+).gb'
+  964  mv 'His_AVI_3C_USP11_77-938_pET-28a(+).gb' 'His_AVI_3C_USP11_77-938_pET-28a(+).gb'
+  965  mv 'His_AVI_TEV_AMSH_244-424_pET-28a(+).gb' 'His_AVI_TEV_AMSH_244-424_pET-28a(+).gb'
+  966  mv 'His_AVI_TEV_AMSH_FL_pET-28a(+).gb' 'His_AVI_TEV_AMSH_FL_pET-28a(+).gb'
+  967  mv 'His_AVI_TEV_BAX_G67R_pET28(+).gb' 'His_AVI_TEV_BAX_G67R_pET-28a(+).gb'
+  968  mv 'His_AVI_TEV_BAX_P168G_pET28(+).gb' 'His_AVI_TEV_BAX_P168G_pET-28a(+).gb'
+  969  mv 'His_AVI_TEV_BAX_W139A_pET28(+).gb' 'His_AVI_TEV_BAX_W139A_pET-28a(+).gb'
+  970  mv 'His_AVI_TEV_BAX_WT_pET-28a(+).gb' 'His_AVI_TEV_BAX_WT_pET-28a(+).gb'
+  971  mv 'His_AVI_TEV_BRD7_129-250_pET-28a(+).gb' 'His_AVI_TEV_BRD7_129-250_pET-28a(+).gb'
+  972  mv 'His_AVI_TEV_DHFR_E_coli_pET-28a(+).gb' 'His_AVI_TEV_DHFR_E_coli_pET-28a(+).gb'
+  973  mv 'His_AVI_TEV_FKBP12 (F36V).gb' 'His_AVI_TEV_FKBP12 (F36V).gb'
+  974  mv 'His_AVI_TEV_FKBP_WT_pET-28a(+).gb' 'His_AVI_TEV_FKBP_WT_pET-28a(+).gb'
+  975  mv 'His_AVI_TEV_MTH1_42-197_pET-28a(+).gb' 'His_AVI_TEV_MTH1_42-197_pET-28a(+).gb'
+  976  mv 'His_AVI_TEV_OTUB1_25-271_pET-28a(+).gb' 'His_AVI_TEV_OTUB1_25-271_pET-28a(+).gb'
+  977  mv 'His_AVI_TEV_OTUD1_287-437_pET-28a(+).gb' 'His_AVI_TEV_OTUD1_287-437_pET-28a(+).gb'
+  978  mv 'His_AVI_TEV_OTUD7B_128-438_pET-28a(+).gb' 'His_AVI_TEV_OTUD7B_128-438_pET-28a(+).gb'
+  979  mv 'His_AVI_TEV_UCHL3_FL_pET-28a(+).gb' 'His_AVI_TEV_UCHL3_FL_pET-28a(+).gb'
+  980  mv 'His_AVI_TEV_USP13_22-863_pET-28a(+).gb' 'His_AVI_TEV_USP13_22-863_pET-28a(+).gb'
+  981  mv 'His_AVI_TEV_USP15_CD_275-981_pET-28a(+).gb' 'His_AVI_TEV_USP15_CD_275-981_pET-28a(+).gb'
+  982  mv 'His_AVI_TEV_USP15_FL_pET-28a(+).gb' 'His_AVI_TEV_USP15_FL_pET-28a(+).gb'
+  983  mv 'His_AVI_TEV_USP19_115-1256_pET-28a(+).gb' 'His_AVI_TEV_USP19_115-1256_pET-28a(+).gb'
+  984  mv 'His_AVI_TEV_USP19_115-878_985-1216_pET-28a(+).gb' 'His_AVI_TEV_USP19_115-878_985-1216_pET-28a(+).gb'
+  985  mv 'His_AVI_TEV_USP19_495-1216_pET-28a(+).gb' 'His_AVI_TEV_USP19_495-1216_pET-28a(+).gb'
+  986  mv 'His_AVI_TEV_USP19_495-1256_pET-28a(+).gb' 'His_AVI_TEV_USP19_495-1256_pET-28a(+).gb'
+  987  mv 'His_AVI_TEV_USP19_495-677_1056-1216_pET-28a(+).gb' 'His_AVI_TEV_USP19_495-677_1056-1216_pET-28a(+).gb'
+  988  mv 'His_AVI_TEV_USP19_495-878_985-1216_pET-28a(+).gb' 'His_AVI_TEV_USP19_495-878_985-1216_pET-28a(+).gb'
+  989  mv 'His_AVI_TEV_USP19_495-878_985-1256_pET-28a(+).gb' 'His_AVI_TEV_USP19_495-878_985-1256_pET-28a(+).gb'
+  990  mv 'His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb' 'His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb'
+  991  mv 'His_AVI_TEV_USP28_1-703_pET-28a(+).gb' 'His_AVI_TEV_USP28_1-703_pET-28a(+).gb'
+  992  mv 'His_AVI_TEV_USP28_CD_149-703_pET-28a(+).gb' 'His_AVI_TEV_USP28_CD_149-703_pET-28a(+).gb'
+  993  mv 'His_AVI_TEV_USP28_FL_pET-28a(+).gb' 'His_AVI_TEV_USP28_FL_pET-28a(+).gb'
+  994  mv 'His_AVI_TEV_USP2_CD_258-605_SSG_pET-28a(+).gb' 'His_AVI_TEV_USP2_CD_258-605_SSG_pET-28a(+).gb'
+  995  mv 'His_AVI_TEV_USP30_65-181_215-362_430_517_pET-28a(+).gb' 'His_AVI_TEV_USP30_65-181_215-362_430_517_pET-28a(+).gb'
+  996  mv 'His_AVI_TEV_USP30_65-360_pET-28a(+).gb' 'His_AVI_TEV_USP30_65-360_pET-28a(+).gb'
+  997  mv 'His_AVI_TEV_USP30_65-372_430-517_pET-28a(+).gb' 'His_AVI
+  998  mv 'His_AVI_TEV_USP30_65-517_pET-28a(+).gb' 'His_AVI_TEV_USP30_65-517_pET-28a(+).gb'
+  999  mv 'His_AVI_TEV_USP47_1027-1347_pET-28a(+).gb' 'His_AVI_TEV_USP47_1027-1347_pET-28a(+).gb'
+ 1000  mv 'His_AVI_TEV_USP47_186-425_pET-28a(+).gb' 'His_AVI_TEV_USP47_186-425_pET-28a(+).gb'
+ 1001  mv 'His_AVI_TEV_USP47_186-579_pET-28a(+).gb' 'His_AVI_TEV_USP47_186-579_pET-28a(+).gb'
+ 1002  mv 'His_AVI_TEV_USP47_186-831_pET-28a(+).gb' 'His_AVI_TEV_USP47_186-831_pET-28a(+).gb'
+ 1003  mv 'His_AVI_TEV_USP7_207-882_pET-28a(+).gb' 'His_AVI_TEV_USP7_207-882_pET-28a(+).gb'
+ 1004  mv 'His_AVI_TEV_USP7_537-793_pET-28a(+).gb' 'His_AVI_TEV_USP7_537-793_pET-28a(+).gb'
+ 1005  mv 'His_AVI_TEV_USP8_734-1110_pET-28a(+).gb' 'His_AVI_TEV_
+ 1006  mv 'His_AVI_TEV_USP8_FL_pET-28a(+).gb' 'His_AVI_TEV_USP8_FL_pET-28a(+).gb'
+ 1007  mv 'His_AVI_TEV_WDR48_1-677_pET-28a(+).gb' 'His_AVI_TEV_WDR48_1-677_pET-28a(+).gb'
+ 1008  mv 'His_AVI
+ 1009  mv 'His_Avi_TEV_BRD9_134-239_pET-28a(+).gb' 'His_Avi_TEV_BRD9_134-239_pET-28a(+).gb'
+ 1010  mv 
+ 1011  mv 'His_Avi_TEV_USP5_171-290_pET-28a(+).gb' 'His_Avi_TEV_USP5_171-290_pET-28a(+).gb'
+ 1012  mv 'His_Avi_TEV_USP7_CD_560-1084_pET-28a(+).gb' 'His_Avi_TEV_USP7_CD_560-1084_pET-28a(+).gb'
+ 1013  mv 'His_Avi_TEV_USP7_CD_560-793_pET-28a(+).gb' 'His_Avi_TEV_USP7_CD_560-793_pET-28a(+).gb'
+ 1014  mv 'His_Avi_TEV_USP7_CD_891-1084_pET-28a(+).gb' 'His_Avi_TEV_USP7_CD_891-1084_pET-28a(+).gb'
+ 1015  mv 'His_TEV_AVI_USP2_CD_258-605_pET-28a(+).gb' 'Hi
+ 1016  mv 'SSG_His_AVI_TEV_DHFR(E coli)_pET-28a(+).gb' 'SSG_His_AVI_TEV_DHFR(E co
+ 1017  mv 'SSG_His_AVI_TEV_FKBP12 (F36V)_pET-28a(+).gb' 'SSG_His_AVI_TEV_FKBP12 (F36V)_pET-28a(+).gb'
+ 1018  mv 'SSG_His_AVI_TEV_FKBP_WT_pET-28a(+).gb' 'SSG_His_AVI_TEV_FKBP_WT_pET-28a(+).gb'
+ 1019  mv 'SSG_His_AVI_TEV_MTH1_42-197_pET-28a(+).gb' 'SSG_His_AVI_TEV_MTH1_42-197_pET-28a(+).gb'
+ 1020  mv 'SSG_His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb' 'SSG_His_AVI_TEV_USP21_CD_209-565_pET-28a(+).gb'
+ 1021  mv 'SSG_His_AVI_TEV_USP7_FL_1-1102 _pET28a.gb' 'SSG_His_AVI_TEV_USP7_FL_1-1102_pET28a.gb'
+ 1022  mv 'SSG_H
+ 1023  mv 'SSG_His_USP7_CD_207-1102_pET-28a(+).gb' 'SSG_His_USP7_CD_207-1102_pET-28a(+).gb'
+ 1024  mv 'USP2_CD_258-605_AVI_TEV_His_pET-28a(+).gb' 'USP2_CD_258-605_AVI_TEV_His_pET-28a(+).gb'
+ 1025  mv 'USP2_CD_258-605_TEV_AVI_His_pET-28a(+).gb' 'USP2_CD_258-605_TEV_AVI_His_pET-28a(+).gb'
+ 1026  mv 'His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb' 'His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb'
+ 1027  mv 'His-TEV-Avi_USP7_CD_207-1102_pGEX-4T-1.gb' 'His-TEV-Avi_USP7_CD_207-1102_pGEX-4T-1.gb'
+ 1028  mv 'His-TEV-Avi_USP7_FL_1-1102_pGEX-4T-1.gb' 'His-TEV-Avi_USP7_FL_1-1102_pGEX-4T-1.gb'
+ 1029  mv 'His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb' 'His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb'
+ 1030  mv 'His_Avi_TEV_USP2_FL_1-605_pET-28a(+).gb' 'His_Avi_TEV_USP2_FL_1-605_pET-28a(+).gb'
+ 1031  mv 'New_His-Avi-TEV_USP7_FL_1-1102_pET-28a(+).gb' 'His-Avi-TEV_USP7_FL_1-1102_pET-28a(+).gb'
+ 1032  mv 'New_His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb' 'New_His-Avi-Tev_USP7_CD_207-1102_pET-28a(+).gb'
+ 1033  mv 'New_His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb' 'New_His_Avi_TEV_USP2_CD_258-605_pET-28a(+).gb'
+ 1034  ls
+ 1035  history ffmpeg
+ 1036  history | grep ffmpeg
+ 1037  ffmpeg
+ 1038  sudo apt install ffmpeg
+ 1039  apt-get update
+ 1040  sudo apt-get update
+ 1041  history | grep pdf
+ 1042  /mnt/
+ 1043  ls
+ 1044  /mnt/c/
+ 1045  ls
+ 1046  pwd
+ 1047  cd /mnt/
+ 1048  ls
+ 1049  cd g/
+ 1050  ls
+ 1051  cd My\ Drive/
+ 1052  ls
+ 1053  cd ..
+ 1054  cd h/My\ Drive/
+ 1055  ls
+ 1056  cd Stablix_Reimbarshements/
+ 1057  ls
+ 1058  cd 20211207/
+ 1059  ls
+ 1060  history | grep pdf
+ 1061  ls
+ 1062  pdftk A=MobyTrip _ Booking Detail.pdf B=MobyTrip _ Booking Update.pdf A B Row_booking.pdf
+ 1063  ls
+ 1064  pdftk A=MobyTrip\ _\ Booking\ Detail.pdf B=MobyTrip\ _\ Booking\ Update.pdf A B Row.pdf
+ 1065  pdftk MobyTrip\ _\ Booking\ Detail.pdf MobyTrip\ _\ Booking\ Update.pdf cat output Row.pdf
+ 1066  pdftk MobyTrip\ _\ Booking\ Update.pdf MobyTrip\ _\ Booking\ Detail.pdf cat output Row.pdf 
+ 1067  ffmpeg
+ 1068  sudo apt install ffmpeg
+ 1069  cd /mnt/c/Users/Evangelos/Documents/Stablix/ALPX/Andrea_ZnF_20211208/movie_01/
+ 1070  ls
+ 1071  ffmpeg -i USP5_%04d.png USP5.mpg
+ 1072  ffmpeg -i USP5_%04d.png -vb 10K USP5.mpg
+ 1073  ffmpeg -i USP5_%04d.png -vb 10M USP5.mpg
+ 1074  ffmpeg -i USP5_%04d.png -vb 3M USP5-1.mpg
+ 1075  ffmpeg -i USP5_%04d.png -c:v copy  USP5-2.mpg
+ 1076  ffmpeg -i USP5_%04d.png -vb 10M USP5-3.mpg
+ 1077  cd ../movie_02/
+ 1078  ffmpeg -i USP5_%04d.png -vb 10M USP5-1.mpg
+ 1079  history | mount
+ 1080  history | grep mount
+ 1081  sudo mount -t drvfs Z: /mnt/z
+ 1082  cd /mnt/z/Private/epapadopoulos/Constructs/OTUB1/
+ 1083  ls
+ 1084  history | grep pbabel
+ 1085  history | grep obabel
+ 1086  obabel -ismi STX-000334.csv -O *.pdbqt -d  --partialcharge gasteiger --gen3d
+ 1087  ls
+ 1088  obabel -ismi STX-000334.csv -O *.sdf --gen3d
+ 1089  git
+ 1090  cd /mnt/c/
+ 1091  ls
+ 1092  cd 'Program Files
+ 1093  cd Program Files
+ 1094  cd Program\ Files
+ 1095  ls
+ 1096  mkdir QvinaW
+ 1097  c d..
+ 1098  cd ..
+ 1099  ls
+ 1100  mkdir Programs
+ 1101  cd Programs
+ 1102  mkdir QvinaQ
+ 1103  mv QvinaQ/ QvinaM
+ 1104  cd QvinaM/
+ 1105  git clone https://github.com/aalhossary/qvina
+ 1106  ls
+ 1107  cd qvina/
+ 1108  l
+ 1109  ls
+ 1110  more README.md 
+ 1111  ls
+ 1112  cd build/
+ 1113  ls
+ 1114  more makefile_common 
+ 1115  man make
+ 1116  ls
+ 1117  more makefile_common 
+ 1118  ls
+ 1119  cd linux/
+ 1120  ls
+ 1121  cd ..
+ 1122  ls
+ 1123  cd ,,
+ 1124  cd ..
+ 1125  ls
+ 1126  cd src/
+ 1127  ls
+ 1128  cd main/
+ 1129  ls
+ 1130  cd ..
+ 1131  ls
+ 1132  cd ..
+ 1133  ls
+ 1134  cd build/
+ 1135  make
+ 1136  ls
+ 1137  make makefile_common
+ 1138  cd linux/
+ 1139  ls
+ 1140  cd release/
+ 1141  ls
+ 1142  make Makefile
+ 1143  more Makefile 
+ 1144  pwd
+ 1145  ls
+ 1146  more dependencies 
+ 1147  make && Makefile
+ 1148  cd ..
+ 1149  la
+ 1150  cd build/
+ 1151  ls
+ 1152  make && makefile_common
+ 1153  cd linux/
+ 1154  ls
+ 1155  cd release/
+ 1156  ;s
+ 1157  ls
+ 1158  make && makefile_common
+ 1159  gcc
+ 1160  g++
+ 1161  brew install boost
+ 1162  boost
+ 1163  sudo apt install boost
+ 1164  sudo apt install brew
+ 1165  sudo apt install boost
+ 1166  history
+ 1167  sudo mount -t drvfs Z: /mnt/z
+ 1168  cd /mnt/z/Private/epapadopoulos/Constructs/OTUB1/
+ 1169  ls
+ 1170  more STX-000334.pdbqt 
+ 1171  history | grep obabel
+ 1172  obabel -isdf STX-000334.sdf -O STX_334.pdbqt --partialcharge gasteiger
+ 1173  history | grep rename
+ 1174  history | grep move
+ 1175  history 
+ 1176  cd ..
+ 1177  ls
+ 1178  cd ..
+ 1179  ls
+ 1180  pwd
+ 1181  ls
+ 1182  cd programm_scripts/
+ 1183  history > history_21122021.txt

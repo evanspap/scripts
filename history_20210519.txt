@@ -1,0 +1,1000 @@
+ 1002  grep -Fxf tier1_SMR.txt INDEX
+ 1003  frep
+ 1004  fgrep
+ 1005  fgrep -e tier1_SMR.txt INDEX
+ 1006  grep -f tier1_SMR.txt INDEX
+ 1007  grep "QM" INDEX
+ 1008  grep  '.' tier1_SMR.txt 
+ 1009  more tier1_SMR.txt 
+ 1010  grep  '.' tier1_SMR.txt 
+ 1011  grep  '.' tier1_SMR.txt | grep -f INDEX
+ 1012  man grep
+ 1013  grep  -v '.' tier1_SMR.txt | grep -f INDEX
+ 1014  grep  -v '.' tier1_SMR.txt
+ 1015  grep  -v '' tier1_SMR.txt
+ 1016  grep '' tier1_SMR.txt
+ 1017  grep '.' tier1_SMR.txt
+ 1018  grep '' tier1_SMR.txt
+ 1019  grep '.' tier1_SMR.txt
+ 1020  grep -v '.' tier1_SMR.txt
+ 1021  Q86XK2;
+ 1022  Q9NR56;
+ 1023  Q9NRW4;
+ 1024  Q96GM5;
+ 1025  Q5TDH0;
+ 1026  Q9UBS4;
+ 1027  Q13217;
+ 1028  P40189;
+ 1029  Q9NX47;
+ 1030  P54368;
+ 1031  Q9Y376;
+ 1032  Q15831;
+ 1033  Q6VMQ6;
+ 1034  P98194;
+ 1035  Q04726;
+ 1036  Q9P0L0;
+ 1037  Q8N1B4;
+ 1038  O60762;
+ 1039  Q9UBB5;
+ 1040  ls
+ 1041  grep -v -e '^$' tier1_SMR.txt 
+ 1042  grep -v -e '^[[:space:]]*$' tier1_SMR.txt 
+ 1043  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  | grep -f INDEX
+ 1044  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  
+ 1045  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  > tier1_SMR_nospace.txt
+ 1046  grep -f tier1_SMR_nospace.txt INDEX
+ 1047  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  | grep -f - INDEX
+ 1048  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  | grep -f -INDEX
+ 1049  grep -v -e '^[[:space:]]*$' tier1_SMR.txt  | grep -f - INDEX
+ 1050  grep -f tier1_SMR_nospace.txt - INDEX
+ 1051  cat tier1_SMR_nospace.txt 
+ 1052  cat tier1_SMR_nospace.txt | grep INDEX
+ 1053  grep -f tier1_SMR_nospace.txt INDEX
+ 1054  more INDEX
+ 1055  more tier1_SMR_nospace.txt 
+ 1056  man grep
+ 1057  emerge --ask app-text/dos2unix
+ 1058  sudo apt install dos2unix
+ 1059  dos2unix tier1_SMR_nospace.txt 
+ 1060  grep -f tier1_SMR_nospace.txt INDEX
+ 1061  grep -f tier1_SMR_nospace.txt INDEX > selected_Tier1_SMR.txt
+ 1062  nedit selected_Tier1_SMR.txt 
+ 1063  dos2unix URL_Tier1_SMR.txt 
+ 1064  history | grep curl
+ 1065  man curl
+ 1066  xargs -n 1 curl -O -L < URL_Tier1_SMR.txt 
+ 1067  man curl
+ 1068  more URL_Tier1_SMR.txt 
+ 1069  curl https://swissmodel.expasy.org/repository/uniprot/P98194-9.pdb?from=24&to=903&template=5mpm.1.A&provider=swissmodel
+ 1070  curl https://swissmodel.expasy.org/repository/uniprot/P98194-9.pdb?from=24&to=903&template=5mpm.1.A&provider=swissmodel 
+ 1071  curl 'https://swissmodel.expasy.org/repository/uniprot/P98194-9.pdb?from=24&to=903&template=5mpm.1.A&provider=swissmodel '
+ 1072  curl 'https://swissmodel.expasy.org/repository/uniprot/P98194-9.pdb?from=24&to=903&template=5mpm.1.A&provider=swissmodel'
+ 1073  curl 'https://swissmodel.expasy.org/repository/uniprot/P98194-9.pdb?from=24&to=903&template=5mpm.1.A&provider=swissmodel' -O
+ 1074  ls
+ 1075  cat URL_Tier1_SMR.txt 
+ 1076  cat -n URL_Tier1_SMR.txt 
+ 1077  xargs -n 1 curl -O -L < URL_Tier1_SMR.txt 
+ 1078  history
+ 1079  ls
+ 1080  history
+ 1081  grep -v -e '^[[:space:]]*$' tier1_only_SMR.txt 
+ 1082  grep -v -e '^[[:space:]]*$' tier1_only_SMR.txt  > tier1_only_SMR_nolines.txt 
+ 1083  ls
+ 1084  history
+ 1085  ls
+ 1086  mkdir Only_SMR_Tier1
+ 1087  history
+ 1088  grep -f tier1_only_SMR_nolines.txt INDEX
+ 1089  dos2unix tier1_only_SMR_nolines.txt 
+ 1090  grep -f tier1_only_SMR_nolines.txt INDEX
+ 1091  grep -f tier1_only_SMR_nolines.txt INDEX > URL_tier1_only_SMR_nolines.txt 
+ 1092  cat URL_tier1_only_SMR_nolines.txt 
+ 1093  history
+ 1094  ls
+ 1095  history
+ 1096  more tier1_only_SMR_nolines.txt 
+ 1097  dos2unix tier1_only_SMR.txt 
+ 1098  grep -f tier1_only_SMR.txt INDEX 
+ 1099  grep -f tier1_only_SMR.txt INDEX  > URL_tier1_only_SMR_nolines.txt 
+ 1100  ls
+ 1101  nedit URL_tier1_only_SMR_nolines.txt 
+ 1102  cd Only_SMR_Tier1/
+ 1103  ls
+ 1104  history
+ 1105  xargs -n 1 curl -O -L < URL_only_SMR_Tier1.txt 
+ 1106  dos2unix URL_only_SMR_Tier1.txt 
+ 1107  xargs -n 1 curl -O -L < URL_only_SMR_Tier1.txt 
+ 1108  ls
+ 1109  ls -1 *pdb*
+ 1110  ls -1 *pdb* |
+ 1111  for filename in *foo*; do echo mv \"$filename\" \"${filename//foo/bar}\"; done 
+ 1112  for filename in *pdb; do echo mv \"$filename\" \"${filename//foo/bar}\"; done 
+ 1113  for filename in *pdb*; do echo mv \"$filename\" \"${filename//foo/bar}\"; done 
+ 1114  ls
+ 1115  for file in *; do echo mv -- "$file" "$file.jpg"; done
+ 1116  for file in *pdb*; do echo mv -- "$file" "$file.pdb"; done
+ 1117  for file in *pdb*; do echo mv -- "$file" "$file.pdb"; done| /bin/bash
+ 1118  ls
+ 1119  for file in *pdb*; do echo mv -- "$file" "$file.pdb"; done| /bin/bash
+ 1120  for file in *pdb*; do echo mv -- "$file" "$file.pdb"; done
+ 1121  mv -- Q9Y385.pdb?provider=swissmodel&from=10&to=153&template=2f4w.1.A&provider=swissmodel Q9Y385.pdb?provider=swissmodel&from=10&to=153&template=2f4w.1.A&provider=swissmodel.pdb
+ 1122  mv -- help
+ 1123  mv --help
+ 1124  for file in *pdb*; do echo mv "$file" "$file.pdb"; done
+ 1125  for file in *pdb*; do echo mv "$file" "$file.pdb"; done | /bin/bash 
+ 1126  history
+ 1127  man curl
+ 1128  ls
+ 1129  for file in *pdb*; do echo mv "'" "$file" "'" "'" "$file.pdb" "'"; done
+ 1130  for file in *pdb*; do echo mv "'""$file""'" "'" "$file.pdb" "'"; done
+ 1131  for file in *pdb*; do echo mv "'$file""'" "'" "$file.pdb" "'"; done
+ 1132  for file in *pdb*; do echo mv "'$file'" "'$file.pdb'"; done
+ 1133  for file in *pdb*; do echo mv "'$file'" "'$file.pdb'"; done | /bin/bash 
+ 1134  ls
+ 1135  cd ..
+ 1136  cd programms/
+ 1137  ls
+ 1138  cd ProteinDescriptor-master/
+ 1139  ls
+ 1140  cd tier1_SMR/
+ 1141  ls
+ 1142  history | grep obabel
+ 1143  ls
+ 1144  ./makepdbqt.sh 
+ 1145  obabel
+ 1146  obabel "c:\Program Files\OpenBabel-3.0.0\obabel.exe" -ipdbqt *.pdbqt -O *.mol2
+ 1147  obabel -ipdbqt *.pdbqt -O *.mol2
+ 1148  ls
+ 1149  ls *mol2
+ 1150  obabel -ipdbqt *.pdbqt -O *.mol2
+ 1151  ls *mol2
+ 1152  history
+ 1153  f
+ 1154  history
+ 1155  obabel -ipdbqt 'P98194-2.pdb?from=24&to=885&template=6jju.1.A&provider=swissmodel.pdbqt' -O P98194-2.pdb\?from\=24\&to\=885\&template\=6jju.1.A\&provider\=swissmodel.mol2
+ 1156  vi special_onoma.sh
+ 1157  ./special_onoma.sh 
+ 1158  vi special_onoma.sh
+ 1159  ./special_onoma.sh 
+ 1160  vi special_onoma.sh
+ 1161  ./special_onoma.sh 
+ 1162  vi special_onoma.sh
+ 1163  ./special_onoma.sh 
+ 1164  ls
+ 1165  ls *pdbqt
+ 1166  vi special_onoma.sh
+ 1167  ./special_onoma.sh 
+ 1168  mv Q9Y385.pdb?provider=swissmodel&from=10&to=153&template=2f4w.1.A&provider=swissmodel.pdbqt Q9Y385.pdb_provider_swissmodel_from_10_to_153_template_2f4w.1.A_provider_swissmodel.pdbqt
+ 1169  ./special_onoma.sh 
+ 1170  vi special_onoma.sh
+ 1171  ./special_onoma.sh 
+ 1172  mv 'Q9Y385.pdb?provider=swissmodel&from=10&to=153&template=2f4w.1.A&provider=swissmodel.pdbqt' Q9Y385.pdb_provider_swissmodel_from_10_to_153_template_2f4w.1.A_provider_swissmodel.pdbqt
+ 1173  ./special_onoma.sh 
+ 1174  vi special_onoma.sh
+ 1175  ./special_onoma.sh 
+ 1176  vi special_onoma.sh
+ 1177  more special_onoma.sh 
+ 1178  ./special_onoma.sh 
+ 1179  vi special_onoma.sh
+ 1180  ./special_onoma.sh 
+ 1181  vi special_onoma.sh
+ 1182  ./special_onoma.sh 
+ 1183  vi special_onoma.sh
+ 1184  ./special_onoma.sh 
+ 1185  vi special_onoma.sh
+ 1186  ./special_onoma.sh 
+ 1187  ./special_onoma.sh  | /bin/bash 
+ 1188  ls
+ 1189  ls *pdbqt
+ 1190  history
+ 1191  obabel -ipdbqt *.pdbqt -O *.mol2
+ 1192  cp special_onoma.sh tre3e_obabel.sh
+ 1193  vi tre3e_obabel.sh 
+ 1194  ./tre3e_obabel.sh 
+ 1195  history
+ 1196  cp predict.sh tre3e_obabel.sh 
+ 1197  vi tre3e_obabel.sh 
+ 1198  ./tre3e_obabel.sh 
+ 1199  ls
+ 1200  for f in *.*; do pre="${f%.*}"; suf="${f##*.}";                  echo mv -i -- "$f" "${pre//./_}.${suf}"; done
+ 1201  for f in *.pdbqt; do pre="${f%.*}"; suf="${f##*.}";                  echo mv -i -- "$f" "${pre//./_}.${suf}"; done
+ 1202  for f in *.pdbqt; do pre="${f%.*}"; suf="${f##*.}"; mv -i -- "$f" "${pre//./_}.${suf}"; done
+ 1203  ls
+ 1204  history
+ 1205  ./tre3e_obabel.sh 
+ 1206  more tre3e_obabel.sh 
+ 1207  vi tre3e_obabel.sh 
+ 1208  ./tre3e_obabel.sh 
+ 1209  history
+ 1210  history > istoria.txt
+ 1211  ./predict.sh 
+ 1212  ls
+ 1213  ls *.txt
+ 1214  cd batch_2/
+ 1215  more predict.sh 
+ 1216  nedit predict.sh 
+ 1217  ./predict.sh 
+ 1218  vi predict.sh 
+ 1219  ./predict.sh 
+ 1220  ls
+ 1221  history | grep tail
+ 1222  tail -n+1 *.txt >total_log.log
+ 1223  more total_log.log 
+ 1224  ls
+ 1225  ls *.txt
+ 1226  sudo apt-get install arecord
+ 1227  arecord
+ 1228  sudo add-apt-repository ppa:audio-recorder/ppa
+ 1229  sudo apt-get install audio-recorder
+ 1230  arecord --format=S16_LE --rate=16000 --duration=3 myvoicerecording.wav
+ 1231  sudo apt-get install arecord
+ 1232  apt-get install alsa-utils
+ 1233  sudo apt-get install alsa-utils
+ 1234  arecord --format=S16_LE --rate=16000 --duration=3 myvoicerecording.wav
+ 1235  cd /mnt/c/Users/evang/Documents/Audacity/
+ 1236  ls
+ 1237  curl -X POST --data-binary @'hi_mono.wav' --header 'Content-Type: audio/l16; rate=16000;' 'https://www.google.com/speech-api/v2/recognize?output=json&lang=el&key=mykey'
+ 1238  ls
+ 1239  curl -X POST --data-binary @'hi_mono.wav' --header 'Content-Type: audio/l16; rate=16000;' 'https://www.google.com/speech-api/v2/recognize?output=json&lang=el&key=mykey'
+ 1240  arecord
+ 1241  man deepspeech
+ 1242  deepspeech
+ 1243  which deepspeech
+ 1244  who deepspeech
+ 1245  cd /home/evan/.local/bin/
+ 1246  ls
+ 1247  more deepspeech 
+ 1248  deepspeech 
+ 1249  cd /mnt/c/Users/evang/Documents/Audacity/
+ 1250  deepspeech -ver
+ 1251  cd /mnt/c/Users/evang/Videos/
+ 1252  youtube-dl -t https://clipwatching.com/w999ybayst3d#
+ 1253  cd /mnt/c/Users/evang/Videos/
+ 1254  youtube-dl https://gounlimited.to/5mp05k4qk6do
+ 1255  history
+ 1256  history | grep html
+ 1257  history | grep png
+ 1258  history | grep python
+ 1259  history
+ 1260  https://www.dropbox.com/sh/m46ns163cm373nh/AAAmPNtCknZwOZCe7HEMlgnGa?dl=0
+ 1261  history | grep test
+ 1262  history | grep htm
+ 1263  history | grep for
+ 1264  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/cm-lab-cells/20200713/
+ 1265  python tif2html.py 
+ 1266  ls
+ 1267  python tif2html.py > 20200713.html
+ 1268  sudo apt-get install imagemagick
+ 1269  for f in *.tif; do  echo "Converting $f"; convert "$f"  "$(basename "$f" .tif).png"; done
+ 1270  python png2html.py > 20200713.html 
+ 1271  more png2html.py 
+ 1272  python png2html.py
+ 1273  python png2html.py > 20200713.html 
+ 1274  for f in *.tif; echo "Converting $f"; convert "$f"  "$(basename "$f" .tif).png"; done
+ 1275  for f in *.tif; echo "Converting $f"; convert -resize 25% "$f"  "$(basename "$f" .tif).png"; done
+ 1276  for f in *.tif; do  echo "Converting $f"; convert -resize 25% "$f"  "$(basename "$f" .tif).png"; done
+ 1277  python png2html2.py > 20200713.html 
+ 1278  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1279  cd ../20200707/
+ 1280  ls
+ 1281  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1282  cd ../20200709/
+ 1283  ls
+ 1284  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1285  cd ../07-16-2020/
+ 1286  ls
+ 1287  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1288  cd ..
+ 1289  ls
+ 1290  python png2html.py 
+ 1291  python -v
+ 1292  python3 png2html.py 
+ 1293  python png2html.py 
+ 1294  python png2html.py > cells.html
+ 1295  python png2html.py 
+ 1296  python png2html.py > cells.html
+ 1297  ls
+ 1298  cd 20200716\ -\ Copy/
+ 1299  ls
+ 1300  magick -auto-level *.png
+ 1301  convert -auto-level *.png
+ 1302  ls
+ 1303  convert -normalize *.png
+ 1304  convert -contrast-stretch *.png
+ 1305  convert -contrast-stretch 0  *.png
+ 1306  cd ..
+ 1307  ls
+ 1308  cd Images/20200716/
+ 1309  ls
+ 1310  cd ../20200720/
+ 1311  ls
+ 1312  history | grep convert
+ 1313  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1314  ls
+ 1315  cd ../20200723/
+ 1316  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1317  cd ../20200727
+ 1318  for f in *.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1319  cd ..
+ 1320  ls
+ 1321  python png2html.py 
+ 1322  ls
+ 1323  python png2html.py > cell_images.html
+ 1324  cd /mnt/c/Users/evang/Videos/
+ 1325  youtube-dl -t https://clipwatching.com/9ujy2qe4aeh3
+ 1326  cd ..
+ 1327  du -hs | sort -hr
+ 1328  sudo du -hs | sort -hr
+ 1329  history
+ 1330  pwd
+ 1331  ls
+ 1332  pwd
+ 1333  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/cm-lab-cells/Images/tmp/
+ 1334  ls
+ 1335  history | grep convert
+ 1336  for f in ./*.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1337  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f"  "$(basename "$f" .tif).png"; done
+ 1338  ls
+ 1339  history | grep convert
+ 1340  for f in */*.tif; echo "Converting $f"; convert "$f"  "$(basename "$f" .tif).png"; done
+ 1341  for f in */*.tif; do  echo "Converting $f"; echo"convert -resize 50% "$f"  "$(basename "$f" .tif).png" "; done
+ 1342  for f in */*.tif; do  echo "Converting $f"; echo convert -resize 50% "$f"  "$path(basename "$f" .tif).png" ; done
+ 1343  for f in */*.tif; do  echo "Converting $f"; echo convert -resize 50% "$f"  "$("$f" .tif).png" ; done
+ 1344  for f in */*.tif; do  echo "Converting $f"; echo"convert -resize 50% "$f" "$(dirname "$f")""$(basename "$f" .tif).png" "; done
+ 1345  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f" "$(dirname "$f")""$(basename "$f" .tif).png" ; done
+ 1346  for f in */*.tif; do  echo "Converting $f"; echo"convert -resize 50% "$f" "$(dirname "$f")""$(basename "$f" .tif).png" "; done
+ 1347  for f in */*.tif; do  echo "Converting $f"; echo"convert -resize 50% "$f" "$(dirname "$f")""/""$(basename "$f" .tif).png" "; done
+ 1348  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f" "$(dirname "$f")""/""$(basename "$f" .tif).png" "; done
+ 1349  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f" "$(dirname "$f")"/"$(basename "$f" .tif).png" "; done
+ 1350  for f in */*.tif; do  echo "Converting $f"; echo"convert -resize 50% "$f" "$(dirname "$f")"'/'"$(basename "$f" .tif).png" "; done
+ 1351  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f" "$(dirname "$f")""/""$(basename "$f" .tif).png" "; done
+ 1352  convert -resize 50% 20200807/mm1s-473-08-07-2020.tif 20200807/mm1s-473-08-07-2020.png 
+ 1353  for f in */*.tif; do  echo "Converting $f"; convert -resize 50% "$f" "$(dirname "$f")"'/'"$(basename "$f" .tif).png" ; done
+ 1354  ls
+ 1355  python png2html.py 
+ 1356  ls
+ 1357  python png2html.py > tmp.html
+ 1358  python mm1spng2html.py 
+ 1359  more mm1spng2html.py 
+ 1360  python mm1spng2html.py 
+ 1361  python mm1spng2html.py > mm1s.html
+ 1362  python kms11png2html.py 
+ 1363  python kms11png2html.py >kms11.html
+ 1364  python mm1spng2html.py > mm1s.html
+ 1365  history
+ 1366  history | grep ffmpeg
+ 1367  pwd
+ 1368  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/EIF4E/Structural_Data/movies/
+ 1369  pip install google-cloud-speech
+ 1370  history
+ 1371  pwd
+ 1372  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/EIF4E/Structural_Data/movies/
+ 1373  ls
+ 1374  cd ..
+ 1375  cd Documents/Audacity/
+ 1376  ls
+ 1377  more speech_transcribe_async.py 
+ 1378  python speech_transcribe_async.py Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM.wav 
+ 1379  more speech_transcribe_async.py 
+ 1380  python speech_transcribe_async.py Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM.wav 
+ 1381  python speech_transcribe_async.py --local_file_path Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM.wav 
+ 1382  export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/evang/Documents/Google_cloud/Project/My\ First\ Project-e492d526570b.json"
+ 1383  python speech_transcribe_async.py --local_file_path Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM.wav 
+ 1384  export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/evang/Documents/Google_cloud/Project/Google.json"
+ 1385  python speech_transcribe_async.py --local_file_path Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM.wav 
+ 1386  python speech_transcribe_async.py --local_file_path Screen\ Recording\ 2020-08-13\ at\ 11.51.13\ PM_8.flac 
+ 1387  python speech_transcribe_async.py --local_file_path Screen\ Recording\ A_01.raw 
+ 1388  python speech_transcribe_async.py --local_file_path Screen\ Recording\ A.raw 
+ 1389  python speech_transcribe_async.py --local_file_path Screen_Recording_01.raw 
+ 1390  python speech_transcribe_async.py --local_file_path Screen_Recording_01.wav 
+ 1391  more speech_transcribe_async.py 
+ 1392  python speech_transcribe_async.py --local_file_path Screen_Recording_01.wav 
+ 1393  python speech_transcribe_async.py --local_file_path Screen_Recording_02.wav 
+ 1394  python speech_transcribe_async.py --local_file_path Screen_Recording_02c.wav 
+ 1395  python speech_transcribe_async.py --local_file_path Screen_Recording_03.wav 
+ 1396  python speech_transcribe_async.py --local_file_path Screen_Recording_03a.wav 
+ 1397  python speech_transcribe_async.py --local_file_path Screen_Recording_4.wav 
+ 1398  ls
+ 1399  python speech_transcribe_async.py --local_file_path Screen_Recording_04.wav 
+ 1400  python speech_transcribe_async.py --local_file_path Screen_Recording_05.wav 
+ 1401  history
+ 1402  history | grep ffmpeg
+ 1403  ffmpeg
+ 1404  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/drugability/
+ 1405  ls
+ 1406  cd ProteinDescriptor-master/
+ 1407  ls
+ 1408  ls -ls
+ 1409  cd tier1_SMR/
+ 1410  ls
+ 1411  ls *.txt
+ 1412  cd batch_2/
+ 1413  ls
+ 1414  more total_log.log 
+ 1415  cat total_log.log | tr -d '\n'
+ 1416  ls
+ 1417  more total_log.log 
+ 1418  cat total_log.log | tr -d '\n' > oneline.txt
+ 1419  more oneline.txt 
+ 1420  more total_log.log 
+ 1421  more oneline.txt 
+ 1422  ls total_log.log 
+ 1423  echo $(total_log.log) > out.txt
+ 1424  echo $(cat total_log.log) > out.txt
+ 1425  more out.txt 
+ 1426  ls *.txt
+ 1427  echo $(cat P98194-5_pdb_from_24_to_902_template_6jju_1_A_provider_swissmodel.txt) > out.txt
+ 1428  more out.txt 
+ 1429  history
+ 1430  history| grep log
+ 1431  history| grep pdb
+ 1432  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/cm-lab-cells/Images/tmp/
+ 1433  history | grep convert
+ 1434  ./convert.sh 
+ 1435  ls
+ 1436  ./kms11png2html.py 
+ 1437  python kms11png2html.py 
+ 1438  python kms11png2html.py > kms11.html 
+ 1439  python mm1spng2html.py > mm1s.html 
+ 1440  xeyes
+ 1441  history ssh
+ 1442  history| grep ssh
+ 1443  ssh -Y epapadopoulos@andover.med.harvard.edu
+ 1444  pwd
+ 1445  ls
+ 1446  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/EIF4E/Structural_Data/
+ 1447  ls
+ 1448  grep _cmd test_11b_restore.pml 
+ 1449  grep "_cmd" test_11b_restore.pml 
+ 1450  grep "_cmd" ./test_11b_restore.pml 
+ 1451  grep "_ cmd" ./test_11b_restore.pml 
+ 1452  grep -v "_ cmd" ./test_11b_restore.pml 
+ 1453  grep -v "_ " ./test_11b_restore.pml 
+ 1454  grep -v "_ " ./test_11b_restore.pml > test_11b_restore_no_.pml 
+ 1455  grep -v "morph" ./test_11b_restore_no_wiz.pml  
+ 1456  grep -v "morph" ./test_11b_restore_no_wiz.pml  > test_11b_restore_no_wiz_morph.pml
+ 1457  grep -v "morph" ./pymol_movieB01.pml | grep -v "wiz" | grep -v "_ "
+ 1458  grep -v "morph" ./pymol_movieB01.pml | grep -v "wiz" | grep -v "_ " > restore_B03_no_wiz_morph_.pml
+ 1459  grep -v "dss" ./restore_B03_no_wiz_morph_03c.pml
+ 1460  grep -v "dss" ./restore_B03_no_wiz_morph_03c.pml >restore_B03_no_wiz_morph_03c_dss.pml
+ 1461  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/EIF4E/Structural_Data/movie_C/
+ 1462  history | ffmpeg
+ 1463  ffmpeg
+ 1464  sudo apt install ffmpeg
+ 1465  ffmpeg
+ 1466  sudo  apt-get update
+ 1467  sudo apt install ffmpeg
+ 1468  ffmpeg
+ 1469  ffmpeg -r 30 -i ./frames1_1680/movie_C_%04d.png -crf 25  -pix_fmt yuv420p movie_C.mp4
+ 1470  cd ../movie_D/
+ 1471  mkdir frame_1261_1680
+ 1472  mkdir frame_1681_2100
+ 1473  mkdir frame_1260_2100
+ 1474  mkdir frame_991_2880
+ 1475  mkdir frame_1260_2880
+ 1476  ls
+ 1477  cd frame_1261_2880/
+ 1478  ls
+ 1479  ffmpeg -r 30 -i ./frames1_1680/movie%04d.png -crf 25  -pix_fmt yuv420p movie_1261_2880.mp4
+ 1480  ffmpeg -r 30 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie_1261_2880.mp4
+ 1481  ffmpeg -r 30 -i ./movie%04d.png -start_number 1261 -crf 25  -pix_fmt yuv420p movie_1261_2880.mp4
+ 1482  ffmpeg -r 30 -start_number 1261 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie_1261_2880.mp4
+ 1483  cd ..
+ 1484  mkdir frame_2881_3660
+ 1485  cd frame_2881_3660
+ 1486  ffmpeg -r 30 -start_number 2881 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie_2881_3660.mp4
+ 1487  cd ..
+ 1488  cd frame_3661_3960
+ 1489  mkdir frame_3661_3960
+ 1490  cd frame_3661_3960/
+ 1491  ffmpeg -r 30 -start_number 3661 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie_3661_3960.mp4
+ 1492  cd ..
+ 1493  cd frames_991_1260/
+ 1494  ffmpeg -r 30 -start_number 991 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1495  cd ../../movie_C/frames1_1260/
+ 1496  ffmpeg -r 30 -start_number 1 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1497  ffmpeg -r 30 -start_number 1 -i ./movie C %04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1498  ls
+ 1499  rename 's/movie_C_/movie/' *
+ 1500  ls
+ 1501  ffmpeg -r 30 -start_number 1 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1502  cd ../../movie_D/
+ 1503  mkdir frame_721_990
+ 1504  cd frame_721_990/
+ 1505  ffmpeg -r 30 -start_number 721 -i ./movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1506  cd ..
+ 1507  pwd
+ 1508  ffmpeg -r 30 -start_number 1 -i ./frame_1_721/movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1509  ls
+ 1510  ffmpeg -r 30 -start_number 1 -i ./frame_1_720/movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1511  ffmpeg -r 30 -start_number 1 -i ./frame_1_720_ok/movie%04d.png -crf 25  -pix_fmt yuv420p movie.mp4
+ 1512  ls
+ 1513  ls *ok
+ 1514  ls -ls *ok
+ 1515  ls
+ 1516  ls | grep ok
+ 1517  ls -l
+ 1518  ls -ld
+ 1519  ls 
+ 1520  ls | grep ok
+ 1521  ffmpeg -r 30 -start_number 1 -safe -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1522  more frames.txt 
+ 1523  ffmpeg -r 30 -start_number 1 -safe -i frames.txt -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1524  more frames.txt 
+ 1525  ls
+ 1526  ffmpeg -r 30 -start_number 1 -safe -i frames.txt -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1527  ffmpeg -r 30 -start_number 1 -safe -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1528  more frames.txt 
+ 1529  ffmpeg -r 30 -start_number 1 -safe 0 -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1530  ffmpeg -r 30  -safe 0 -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1531  ffmpeg -r 30  -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie.mp4
+ 1532  ffmpeg -r 30 -f concat -safe 0  -i "frames.txt"  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1533  ffmpeg -r 30  -i concat:./frame_1_720_ok/movie%04d.png|./frame_721_990_ok/movie%04d.png  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1534  ffmpeg -r 30  -i concat:./frame_1_720_ok/movie%04d.png|./frame_721_990_ok/movie%04d.png  -crf 25  -pix_fmt yuv420p -o movie_nosound.mp4
+ 1535  ffmpeg -r 30 -f concat -safe 0  -i "frames.txt"  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1536  ffmpeg -r 30  -i concat:./frame_1_720_ok/movie%04d.png|./frame_721_990_ok/movie%04d.png  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1537  ffmpeg -r 30  -i "frames.txt" -i eIF4E_movieB04.mp3 -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1538  ffmpeg -r 30 -f concat -safe 0  -i "frames.txt"  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1539  ls */movie*.png
+ 1540  ls */movie*.png > frames_all.txt
+ 1541  more frames_all.txt 
+ 1542  ls
+ 1543  ls *ok/movie*.png 
+ 1544  ls *ok/movie*.png > frames_all.txt [B
+ 1545  ffmpeg -r 30 -pattern_type  glob -i '*ok/movie*.png'  -crf 25  -pix_fmt yuv420p movie_nosound.mp4
+ 1546  ls
+ 1547  ffmpeg -r 30  -i movie_nosound.mp4 -i eIF4E_movieB04.mp3  -crf 25  -pix_fmt yuv420p movie_20200917A.mp4
+ 1548  ffmpeg -r 30  -i movie_nosound.mp4 -i eIF4E_movieB04.mp3  -map 0:v -map 1:a -c:v copy -shortest movie_20200917A.mp4
+ 1549  ffmpeg -r 30  -i movie_nosound.mp4 -i eIF4E_movieB05.mp3  -map 0:v -map 1:a -c:v copy -shortest movie_20200917B.mp4
+ 1550  mkdir frame_3960_4050
+ 1551  history | glob
+ 1552  history | grep glob
+ 1553  history | grep ffmpeg
+ 1554  ffmpeg -r 30 -pattern_type  glob -i '*ok/movie*.png' -crf 25  -pix_fmt yuv420p movie_nosound_b.mp4
+ 1555  ffmpeg -r 30  -i movie_nosound_b.mp4 -i eIF4E_movieB06.mp3  -map 0:v -map 1:a -c:v copy -shortest movie_20200917C.mp4
+ 1556  youtube-dl http://cdn.vidce.net/video/SpongeBob_SquarePants/1x01.mp4
+ 1557  cd ..
+ 1558  cd CM-EP-RS-lab-cells/
+ 1559  ls
+ 1560  cd Images/tmp/
+ 1561  ls
+ 1562  ./convert_tiff_png.sh 
+ 1563  ls
+ 1564  python kms11png2html.py 
+ 1565  python kms11png2html.py > kms11.html 
+ 1566  python mm1spng2html.py 
+ 1567  python mm1spng2html.py > mm1s.html 
+ 1568  cd /mnt/c/Users/evang/Videos/
+ 1569  youtube-dl -t https://clipwatching.com/5k6ik9xyo2k1
+ 1570  youtube-dl -t https://gounlimited.to/7tekqvy3fj3r
+ 1571  ssh -Y epapadopoulos@andover.med.harvard.edu
+ 1572  cd /mnt/c/
+ 1573  ls
+ 1574  cd /mnt/c/Users/evang/Videos
+ 1575  ls
+ 1576  youtube-dl -t https://streamz.vg/wdu?n277yov6mr5drxoijodv74dmeyj0yevmg2ufrpldhqq9oer8353bagxoehodvjzc
+ 1577  youtube-dl -t https://streamz.vg/download9cb6caf4a64ac716e34dd0187bec7de5
+ 1578  youtube-dl https://gounlimited.to/qapy5x8c6ldq
+ 1579  cd m3u/
+ 1580  history | grep m3u
+ 1581  grep -FA1 '(GR)' tv_channels_GDK0613854.m3u > tv_channels_GDK0613854_GR.m3u
+ 1582  youtube-dl https://clipwatching.com/q2fv6pdeumvc
+ 1583  ls
+ 1584  youtube-dl https://clipwatching.com/q2fv6pdeumvc
+ 1585  youtube-dl https://clipwatching.com/bdw94tjmd5qi
+ 1586  youtube-dl -U
+ 1587  youtube-dl https://clipwatching.com/bdw94tjmd5qi
+ 1588  pwd
+ 1589  youtube-dl https://tainio-mania.club/load/metaglwtism_na_paidik_online/spongebob_squarepants_1999/33-1-0-21420
+ 1590  youtube-dl http://cdn.vidce.net/video/SpongeBob_SquarePants/1x01.mp4
+ 1591  youtube-dl https://clipwatching.com/8ow04uvo2y1b
+ 1592  λσ
+ 1593  ls
+ 1594  youtube-dl https://clipwatching.com/7eszzylf5701
+ 1595  ls
+ 1596  pwd
+ 1597  youtube-dl https://tainio-mania.club/load/metaglwtism_na_paidik_online/spongebob_squarepants_1999/33-1-0-21420
+ 1598  ls
+ 1599  mv *.mp4 /mnt/c/Users/evang/Videos/
+ 1600  ls
+ 1601  cd /mnt/c/Users/evang/Videos/
+ 1602  youtube-dl /mnt/c/Users/evang/Videos/
+ 1603  youtube-dl https://streamz.vg/wdu?6ml7f6wgutbe9yrde7x1a2bqlz3ldpakbwrr3n7yhjcrh34wb2ym4acqagcn5m7h
+ 1604  youtube-dl https://streamz.vg/wdu?rw67g5no5qcugxplg3pik9f1awy3i8ra4xhk3598wm3djsz0vojgyzh8vfcen3or
+ 1605  youtube-dl https://gounlimited.to/a6d2jp9cbhr2
+ 1606  youtube-dl https://clipwatching.com/63b7ffxizfnf
+ 1607  youtube-dl https://clipwatching.com/dmrbq42zko9q
+ 1608  pwd
+ 1609  cd Greek
+ 1610  LS
+ 1611  ld
+ 1612  ls
+ 1613  cd Greek_movies/
+ 1614  youtube-dl https://gounlimited.to/hk5s5i3l9m7i
+ 1615  youtube-dl https://clipwatching.com/1ky39s5idmd8
+ 1616  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/CM-EP-RS-lab-cells/Images/tmp/
+ 1617  ./convert_tiff_png.sh 
+ 1618  python kms11png2html.py 
+ 1619  python kms11png2html.py > kms11.html 
+ 1620  python mm1spng2html.py
+ 1621  python mm1spng2html.py >mm1s.html 
+ 1622  cd ..
+ 1623  cd EIF4E/Structural_Data/movie_D/
+ 1624  ls
+ 1625  history | grep ddmpeg
+ 1626  history | grep ffmpeg
+ 1627  fmpeg -r 30  -i movie_nosound_b.mp4 -i video_20201014_03_03.mp3  -map 0:v -map 1:a -c:v copy movie_20201014A.mp4
+ 1628  ffmpeg -r 30  -i movie_nosound_b.mp4 -i video_20201014_03_03.mp3  -map 0:v -map 1:a -c:v copy movie_20201014A.mp4
+ 1629  ffmpeg -r 30  -i movie_nosound_b.mp4 -i video_20201014_03_05.mp3  -map 0:v -map 1:a -c:v copy movie_20201014B.mp4
+ 1630  ffmpeg -r 30  -i movie_nosound_b.mp4 -i video_20201014_03_06.mp3  -map 0:v -map 1:a -c:v copy movie_20201014C.mp4
+ 1631  cd ..
+ 1632  cd Videos/m3u/
+ 1633  history | grep m3u
+ 1634  history 
+ 1635  cd ..
+ 1636  cd Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/
+ 1637  find ./ | grep 5d68
+ 1638  cd Docking/
+ 1639  ls
+ 1640  cd KRIT1_HUM/
+ 1641  lsa
+ 1642  ls
+ 1643  history | grep total
+ 1644  tail -n+1 *.txt >total_log.log
+ 1645  ls
+ 1646  more total_log.log 
+ 1647  python log_analysis.py total_log.log 
+ 1648  more log_analysis.py 
+ 1649  python3 log_analysis.py total_log.log 
+ 1650  more total_log.log 
+ 1651  python3 log_analysis.py total_log.log 
+ 1652  python3 log_analysis.py total_log.log \
+ 1653  python3 log_analysis.py total_log.log 
+ 1654  python
+ 1655  python3 log_analysis.py total_log.log 
+ 1656  python3 log_analysis.py total_log.log  > out.log
+ 1657  python3 log_analysis.py total_log.log  > out2.log
+ 1658  cd ..
+ 1659  ls
+ 1660  cd .. OAZ1_HUM/
+ 1661  cd OAZ1_HUM/
+ 1662  ls
+ 1663  tail -n+1 *.txt >total_log.log
+ 1664  python3 log_analysis.py total_log.log  > out.log
+ 1665  more out.log 
+ 1666  python3 log_analysis.py total_log.log  
+ 1667  python3 log_analysis.py total_log.log  > out2.log
+ 1668  python3 log_analysis.py total_log.log  
+ 1669  python3 log_analysis.py total_log.log  > out3.log
+ 1670  cd ../PMM2_HUMAN/
+ 1671  ls
+ 1672  tail -n+1 *.txt >total_log.log
+ 1673  python3 log_analysis.py total_log.log  > out.log
+ 1674  cd ../STK11_HUMAN/
+ 1675  tail -n+1 *.txt >total_log.log
+ 1676  python3 log_analysis.py total_log.log  > out.log
+ 1677  cd ../TLE3_HUMAN/
+ 1678  tail -n+1 *.txt >total_log.log
+ 1679  python3 log_analysis.py total_log.log  > out.log
+ 1680  youtube-dl https://clipwatching.com/hym7kjpowvct
+ 1681  youtube-dl https://clipwatching.com/bdw94tjmd5qi
+ 1682  youtube-dl https://clipwatching.com/ioc545p3n6dx
+ 1683  pwd
+ 1684  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/REAL_Library/
+ 1685  ls
+ 1686  ./tranches.sh 
+ 1687  wget
+ 1688  more tranches.sh 
+ 1689  ./tranches.sh 
+ 1690  history | grep curl
+ 1691  ls
+ 1692  dos2unix tranches_1.sh 
+ 1693  dos2unix tranches_2.sh 
+ 1694  cd 
+ 1695  youtube-dl http://cdn.vidce.net/video/SpongeBob_SquarePants/9x18.mp4
+ 1696  youtube-dl http://cdn.vidce.net/video/SpongeBob_SquarePants/1x09.mp4
+ 1697  youtube-dl https://tainio-mania.club/load/metaglwtism_na_paidik_online/spongebob_squarepants_1999/33-1-0-21420
+ 1698  pwd
+ 1699  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/LAB-Evan/inhibitors_docking/Docking/Compounds_libraries/Eugen_list_compounds/SMILES/individual_SMILES/
+ 1700  ls
+ 1701  python png2html.py 
+ 1702  python png2html.py > png.html
+ 1703  ls
+ 1704  ls *.html
+ 1705  ls
+ 1706  more smitopng.sh 
+ 1707  obabel.exe 3-Methyladenine.smi -d -O 3-Methyladenine.png 
+ 1708  obabel.exe 3-Methyladenine.smi -O 3-Methyladenine.png -d 
+ 1709  obabel.exe 3-Methyladenine.smi --d -O 3-Methyladenine.png 
+ 1710  obabel.exe 3-Methyladenine.smi d -O 3-Methyladenine.png 
+ 1711  obabel.exe 3-Methyladenine.smi d -opng 3-Methyladenine.png -d 
+ 1712  obabel.exe 3-Methyladenine.smi  -opng 3-Methyladenine.png -d 
+ 1713  obabel.exe 3-Methyladenine.smi  -O 3-Methyladenine.png -d 
+ 1714  obabel.exe 3-Methyladenine.smi  -Opng 3-Methyladenine.png -d 
+ 1715  obabel.exe 3-Methyladenine.smi  -opng 3-Methyladenine.png -d 
+ 1716  obabel.exe 3-Methyladenine.smi  -O 3-Methyladenine.png -d 
+ 1717  obabel.exe 3-Methyladenine.smi  -O 3-Methyladenine.png -p -d 
+ 1718  obabel 3-Methyladenine.smi  -O 3-Methyladenine.png -p -d 
+ 1719  obabel 3-Methyladenine.smi  -O 3-Methyladenine.png -n
+ 1720  obabel 3-Methyladenine.smi  
+ 1721  obabel 3-Methyladenine.smi  -O 3-Methyladenine.png -xd
+ 1722  obabel 3-Methyladenine.smi  -O 3-Methyladenine.png -xn -n -d -xd 
+ 1723  obabel 3-Methyladenine.smi  -O 3-Methyladenine.png -xn -n -d -xd -D
+ 1724  obabel 3-Methyladenine.smi  -Od 3-Methyladenine.png 
+ 1725  obabel 3-Methyladenine.smi  -opng -Od 3-Methyladenine.png 
+ 1726  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png -d
+ 1727  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png -d -xOd
+ 1728  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png -d -xO d
+ 1729  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png -d -xO -d
+ 1730  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png --d
+ 1731  obabel 3-Methyladenine.smi -n -opng -Od 3-Methyladenine.png --title
+ 1732  obabel 3-Methyladenine.smi -O 3-Methyladenine.png --title
+ 1733  ./smitopng.sh 
+ 1734  python mkhtml.py 
+ 1735  python mkhtml.py > out.html 
+ 1736  youtube-dl https://cdn.vidce.net/d/tZV_D43OwO6B4hOcrBmIaA/1606333798/video/SpongeBob_SquarePants/1x01.mp4
+ 1737  ls
+ 1738  mv 1x01-1x01.mp4 /mnt/c/Users/evang/Videos/Greek_movies/
+ 1739  cd /mnt/c/Users/evang/Videos/Greek_movies/Sponge_Bob/
+ 1740  ls
+ 1741  youtube-dl https://cdn.vidce.net/d/tZV_D43OwO6B4hOcrBmIaA/1606333798/video/SpongeBob_SquarePants/1x10.mp4
+ 1742  youtube-dl https://cdn.vidce.net/d/tZV_D43OwO6B4hOcrBmIaA/1606333798/video/SpongeBob_SquarePants/1x11.mp4
+ 1743  youtube-dl ?
+ 1744  youtube-dl 
+ 1745  youtube-dl --help
+ 1746  ls
+ 1747  echo Season_1.txt 
+ 1748  cat Season_1.txt 
+ 1749  youtube-dl < cat Season_1.txt 
+ 1750  cat Season_1.txt 
+ 1751  history 
+ 1752  history | grep curl
+ 1753  youtube-dl 
+ 1754  xargs -n 1 youtube-dl < Season_1.txt 
+ 1755  ping 192.168.0.7
+ 1756  cd /mnt/c/Users/evang/Videos/
+ 1757  mkdir Gerasimos
+ 1758  cd Gerasimos/
+ 1759  youtube-dl https://www.youtube.com/watch?v=Lz89vvFunns
+ 1760  youtube-dl https://www.youtube.com/watch?v=rItfYmqG1lg
+ 1761  ls
+ 1762  history | grep pdb
+ 1763  history | grep auto
+ 1764  obabel
+ 1765  pwd
+ 1766  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/Eugen_list_compounds/
+ 1767  obabel -icif ANP.cif -O ANP.pdbqt
+ 1768  history | grep python
+ 1769  cd /mnt/d/Video/Greek_Movies/
+ 1770  mkdir Batman_mask
+ 1771  cd Batman_mask/
+ 1772  youtube-dl https://gamato2.com/kids/movies/%ce%bc%cf%80%ce%ac%cf%84%ce%bc%ce%b1%ce%bd-%ce%b7-%ce%bc%ce%ac%cf%83%ce%ba%ce%b1-%cf%84%ce%bf%cf%85-%cf%86%ce%b1%ce%bd%cf%84%ce%ac%cf%83%ce%bc%ce%b1%cf%84%ce%bf%cf%82/
+ 1773  youtube-dl https://s1.cloudb7.site/Batman-%20Mask%20of%20the%20Phantasm.mp4
+ 1774  pwd
+ 1775  cd ..
+ 1776  ls
+ 1777  pwd
+ 1778  ls
+ 1779  cd ..
+ 1780  ls
+ 1781  cd .
+ 1782  cd ..
+ 1783  cd
+ 1784  cd /mnt/d/
+ 1785  mkdir Video
+ 1786  cd Video/
+ 1787  mkdir Greek_Movies
+ 1788  cd Greek_Movies/
+ 1789  ls
+ 1790  mkdir The_Nightmare_before_Christmas
+ 1791  cd The_Nightmare_before_Christmas/
+ 1792  youtube-dl https://aparat.cam/9qtt8h44pac4/THE.NIGHTMARE.BEFORE.CHRISTMAS.(1993).HDRIP.(METAGLWTTISMENO).mp4.html
+ 1793  youtube-dl 'https://aparat.cam/9qtt8h44pac4/THE.NIGHTMARE.BEFORE.CHRISTMAS.(1993).HDRIP.(METAGLWTTISMENO).mp4.html'
+ 1794  youtube-dl https://aparat.cam/0f770994-2f42-46dc-83b5-da5666b5a6da
+ 1795  youtube-dl -U
+ 1796  su youtube-dl -U
+ 1797  sudo youtube-dl -U
+ 1798  youtube-dl https://aparat.cam/0f770994-2f42-46dc-83b5-da5666b5a6da
+ 1799  youtube-dl https://s49.aparat.cam/hls/aoqozokorgr5fwfuhz4rmn24lneahy3am2kjk5dttgahofsj6kg5otjpfp6a/index-v1-a1.m3u8
+ 1800  ls
+ 1801  cd /mnt/c
+ 1802  cd /mnt/
+ 1803  ls
+ 1804  cd d
+ 1805  ls
+ 1806  cd /mnt/
+ 1807  ls
+ 1808  cd d
+ 1809  mount d
+ 1810  help mount
+ 1811  cd /media/
+ 1812  ls
+ 1813  cd /dev/fd/
+ 1814  ls
+ 1815  cd ..
+ 1816  cd /dev/
+ 1817  ls
+ 1818  df
+ 1819  du
+ 1820  df
+ 1821  pmount
+ 1822  sudo fdisk -l
+ 1823  su
+ 1824  sudo fdisk -l
+ 1825  su
+ 1826  ls
+ 1827  sudo ls
+ 1828  sudo fdisk -l
+ 1829  fdixk -l
+ 1830  fdisk -l
+ 1831  cd
+ 1832  fdisk -l
+ 1833  cd /mnt/
+ 1834  ls
+ 1835  cd d
+ 1836  sudo mount -t drvfs D: /mnt/d
+ 1837  sudo mkdir /mnt/Passport
+ 1838  sudo mount -t drvfs D: /mnt/Passport/
+ 1839  cd /mnt/Pass
+ 1840  cd /mnt/
+ 1841  ls
+ 1842  cd Passport
+ 1843  s
+ 1844  ls
+ 1845  cd Passport
+ 1846  s
+ 1847  df
+ 1848  du
+ 1849  df
+ 1850  du
+ 1851  df
+ 1852  cd /mnt/d/
+ 1853  ls
+ 1854  cd Video/
+ 1855  ls
+ 1856  cd Greek_Movies/
+ 1857  ls
+ 1858  mkdir Batman_Dracula
+ 1859  cd Batman_Dracula/
+ 1860  youtube-dl -t https://clipwatching.com/k165guyvki33
+ 1861  cd /mnt/d/Video/Greek_Movies/
+ 1862  mkdir The_Road_to_el_dorado
+ 1863  cd The_Road_to_el_dorado/
+ 1864  youtube-dl -t https://streamta.pe/v/46bg00pBOQCp9m/THE_ROAD_TO_EL_DORADO_-_O_DROMOS_GIA_TO_EL_NTORANTO_%282000%29_%28METAGLWTISMENO%29.mp4
+ 1865  history | grep autodock
+ 1866  history
+ 1867  history | grep pdb
+ 1868  history | grep auto
+ 1869  history | grep prepare
+ 1870  pwd
+ 1871  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/PDB_2GQG/docking_setup/
+ 1872  ls
+ 1873  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 2GQG.pdb -A hydrogens
+ 1874  ls
+ 1875  python3 log_analysis.py output.txt 
+ 1876  cd ..
+ 1877  ls
+ 1878  cd PDB_2GQG_dasatinib_ABL/
+ 1879  cd docking_setup/
+ 1880  ls
+ 1881  python3 log_analysis.py output.txt 
+ 1882  python3 log_analysis.py output.txt > PDB_2GQG_dasatinib_ABL_Control.txt
+ 1883  cd ../../PDB_3CS9_nilotinib_ABL/
+ 1884  cd docking_setup/
+ 1885  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 3CS9.pdb -A hydrogens
+ 1886  ls
+ 1887  cd ../../PDB_4CSV_imatinib_ABL/docking_setup/
+ 1888  ls
+ 1889  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 4CSV.pdb -A hydrogens
+ 1890  python3 log_analysis.py PDB_4CSV_imatinib_ABL_Control_output.txt > PDB_4CSV_imatinib_ABL_Control_Table.txt 
+ 1891  cd ../../PDB_3CS9_nilotinib_ABL/docking_setup/
+ 1892  ls
+ 1893  python3 log_analysis.py PDB_3CS9_nilotinib_ABL_Control_output.txt > PDB_3CS9_nilotinib_ABL_Control_Table.txt 
+ 1894  cd ../../PDB_2GQG_dasatinib_ABL/docking_setup/
+ 1895  python3 log_analysis.py PDB_2GQG_dasatinib_ABL_Control_output.txt > PDB_2GQG_dasatinib_ABL_Control_Table.txt 
+ 1896  cd ../../Control_Summary/
+ 1897  history | grep tail
+ 1898  ls
+ 1899  tail -n+1 *.txt >total_summary.out
+ 1900  cd ../STK11_HUMAN/
+ 1901  cd docking_setup_01/
+ 1902  history | grep prepare
+ 1903  ython /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 2wtk.pdb -A hydrogens
+ 1904  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 2wtk.pdb -A hydrogens
+ 1905  cd ..
+ 1906  cd Eihab_Evan/
+ 1907  ls
+ 1908  history | grep autodock
+ 1909  history | grep pdbqt
+ 1910  history | grep hydrogen
+ 1911  ls
+ 1912  cd docking_results_2_11_2020/PL_pro/docking_setup/
+ 1913  ls
+ 1914  history | grep hydrogen
+ 1915  ls
+ 1916  python /mnt/c/mgltools/mgltools_i86Linux2_1.5.2/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r 6W9C_A.pdb -A hydrogens
+ 1917  ls
+ 1918  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/LAB-Evan/inhibitors_docking/Docking/docking_setup_5LC5_Respiratory_Complex_1_Bovine/PBD\ 5LCD\ channel/
+ 1919  ls
+ 1920  cd hollow-1.2/
+ 1921  ls
+ 1922  more hollow.py 
+ 1923  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/LAB-Evan/inhibitors_docking/Docking/docking_setup_5LC5_Respiratory_Complex_1_Bovine/PBD\ 5LCD\ channel/
+ 1924  ls
+ 1925  python ./hollow-1.2/hollow.py -o hollow_1.pdb -g 0.25 channel_b.pdb 
+ 1926  ls
+ 1927  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/LAB-Evan/inhibitors_docking/Docking/docking_setup_5LC5_Respiratory_Complex_1_Bovine/
+ 1928  ls
+ 1929  pwd
+ 1930  ls
+ 1931  cd PBD\ 5LCD\ channel/
+ 1932  ls
+ 1933  python ./hollow-1.2/hollow.py -o hollow_0.pdb -g 1 channel_b.pdb 
+ 1934  2~
+ 1935  sudo apt install dirmngr gnupg apt-transport-https ca-certificates soft
+ 1936  sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+ 1937  sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+ 1938  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+ 1939  sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+ 1940  sudo apt install r-base
+ 1941  sudo apt install r-base-core
+ 1942  sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+ 1943  sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+ 1944  sudo apt install r-base
+ 1945  version
+ 1946  ver
+ 1947  sudo apt-get install r-base
+ 1948  sudo echo "deb http://cloud.r-project.org/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
+ 1949  sudo apt-get update
+ 1950  sudo apt-get install r-base
+ 1951  sudo apt update && sudo apt upgrade
+ 1952  sudo apt-get install r-base
+ 1953  ls
+ 1954  sudo apt-get install r-base-core
+ 1955  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/GlobPlot_RaptorX/drug_pockets_prediction/
+ 1956  ls
+ 1957  ./make_PDBQT.txt 
+ 1958  chmod u+x make_PDBQT.txt 
+ 1959  ./make_PDBQT.txt 
+ 1960  ls
+ 1961  vi PDBQT.sh
+ 1962  ./PDBQT.sh 
+ 1963  ls
+ 1964  vi predict.sh
+ 1965  ./predict.sh 
+ 1966  cd ..
+ 1967  cd
+ 1968  cd /mnt/c/Users/evang/programms/ProteinDescriptor-master/predict_20210512/
+ 1969  ./predict.sh 
+ 1970  cd /mnt/c/Users/evang/Dropbox\ \(Partners\ HealthCare\)/MMSEGs\ Discussion/GeneDeepDives/Evangelos/Docking/
+ 1971  ls
+ 1972  cd S14L5_HUM/
+ 1973  ls
+ 1974  cd results_300kcmp_20210518_B/
+ 1975  ls
+ 1976  cd output-files/
+ 1977  ls
+ 1978  cd complete/
+ 1979  ls
+ 1980  cd qvina02_rigid_receptor1/
+ 1981  ls
+ 1982  cd results/
+ 1983  ls
+ 1984  cd JK
+ 1985  ls
+ 1986  tar -xf JKDBDG.tar -O| gunzip
+ 1987  tar -xf JKDBDG.tar -O| gunzip | grep  Z92393813_1_T1
+ 1988  tar -xf JKDBDG.tar -O| gunzip | grep  -a Z92393813_1_T1
+ 1989  tar -xf JKDBDG.tar -O| gunzip | grep  -a -A1 Z92393813_1_T1
+ 1990  tar -xf JKDBDG.tar -O| gunzip 
+ 1991  ls
+ 1992  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,/ENDMDL/n'  
+ 1993  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,/ENDMDL/' 
+ 1994  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,/ENDMDL/'  
+ 1995  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,'
+ 1996  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/'
+ 1997  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,/ENDMDL/p'  
+ 1998  tar -xf JKDBDG.tar -O| gunzip |   sed -n '/Z92393813_1_T1/,/ENDMDL/p'  > Z92393813_1_T1.pdbqt
+ 1999  cd ..
+ 2000  history
+ 2001  history > history_20210519.txt
