@@ -1,0 +1,60 @@
+
+center_x = 5.399
+center_y = 5.493
+center_z = -5.3
+
+size_x = 74.397
+size_y = 70.286
+size_z = 72.118
+exhaustiveness=64
+num_modes=8
+
+center_x = 5.646
+center_y = 5.323
+center_z = -19.503
+
+size_x = 67.717
+size_y = 65.313
+size_z = 101.077
+exhaustiveness=64
+num_modes=8
+
+center_x = 16.677
+center_y = 21.59
+center_z = -57.371
+
+size_x = 199.113
+size_y = 93.707
+size_z = 193.467
+exhaustiveness=64
+num_modes=8
+
+center_x = -12.418
+center_y = 10.755
+center_z = 62.258
+
+size_x = 44.778
+size_y = 58.180
+size_z = 50.935
+exhaustiveness=64
+num_modes=8
+
+center_x = -3.826
+center_y = 5.645
+center_z = 67.082
+
+size_x = 19.879
+size_y = 9.038
+size_z = 11.491
+exhaustiveness=64
+num_modes=8
+
+center_x = 0.0
+center_y = 0.0
+center_z = 0.0
+
+size_x = 5.0
+size_y = 5.000
+size_z = 5.000
+exhaustiveness=64
+num_modes=8

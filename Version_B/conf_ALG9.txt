@@ -1,0 +1,11 @@
+receptor =./conf/ALG9.pdbqt
+
+center_x = -23.442
+center_y = 2.766
+center_z = 0.468
+
+size_x = 127.786
+size_y = 55.382
+size_z = 87.681
+exhaustiveness=64
+num_modes=8

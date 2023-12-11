@@ -1,0 +1,11 @@
+receptor =./conf/sele.pdbqt
+
+center_x = 9.379
+center_y = -1.637
+center_z = -1.136
+
+size_x = 17.983
+size_y = 21.153
+size_z = 30.344
+exhaustiveness=64
+num_modes=8

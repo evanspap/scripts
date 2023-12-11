@@ -1,0 +1,426 @@
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+systeminfo | find "System Type"
+wsl --set-default-version 2
+systeminfo | find "System Type"
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+python
+exit
+cd C:\Users\Evangelos\Documents\Stablix\
+docker container run --rm -it -v "$(pwd):/data" debian bash
+l
+cd .\AWS\
+ls
+dir
+ls
+docker .\Dockerfile run --rm -it -v "$(pwd):/data" debian bash
+mkdir autodock
+cd .\autodock\
+ls
+unzip
+ls
+cd .\autodock\
+ls
+docker  build -t  autodock_vina .
+docker .\Dockerfile run --rm -it -v "$(pwd):/data" debian bash
+ls
+.\run.sh
+bash .\run.sh
+more .\run.sh
+ls
+pwd
+ls
+cd ..
+ls
+cd .\autodock\
+ls
+more .\run.sh
+docker exec -it autodock-autodock-1 /bin/bash
+docker exec -it .\Dockerfile bash
+ls
+docker exec -it Dockerfile bash
+cd ..
+la
+cd ..
+ls
+cd .\autodock\
+ls
+cd .\autodock\
+ls
+docker  build -t  autodock_vina .
+cd
+adfr
+agfr
+cd ..
+ls
+pwd
+ls
+cd .\autodock\
+l
+ls
+cd ..
+cd .\AWS\autodock\
+ls
+cd .\autodock\
+ls
+adfr
+which adfr
+who adfr
+adfr
+Get-Command adfr
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\'
+'C:\Program Files (x86)\ADFRsuite-1.0\bin\'
+ls
+cd ..
+ls
+cd C:\Program Files (x86)\ADFRsuite-1.0\bin\
+& 'C:\Program Files\'
+c:
+c:\
+c
+c:
+& 'C:\Program Files (x86)\'
+C:\Config.Msi\
+cd ..
+cd..
+cd ..
+cd '.\Program Files (x86)\'
+cd .\ADFRsuite-1.0\
+ls
+cd .\Scripts\
+ls
+cd ..
+find
+find .\
+ls
+cd .\bin\
+ls
+cd
+cd C:\Users\Evangelos\Documents\Stablix\AWS\
+ls
+cd ..\Mcule\OTUD1\
+ls
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_receptor.bat' 
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_receptor.bat'  -r .\OTUD1.pdb
+ls
+adfr
+agfr
+-r .\OTUD1.pdbqt
+-r OTUD1.pdbqt
+adfr -r OTUD1.pdbqt
+agfr -r OTUD1.pdbqt
+ls
+agfr
+cd ..\OTUD7B\
+agfr -r .\5LRU.pdbqt
+agfr
+agfr -h
+cd ..\OTUD1\
+agfr -r OTUD1.pdbqt -p user
+agfr -r OTUD1.pdbqt
+autosite.bat
+autosite.bat -r .\OTUD1.pdbqt
+mkdir autosite
+autosite.bat -r .\OTUD1.pdbqt -o .\autosite\
+ls
+cd .\autosite\
+ls
+more OTUD1_summary.csv
+cd ..
+autosite.bat
+autosite.bat -v
+autosite.bat 
+ls
+mkdir autosite_02
+autosite.bat -r .\OTUD1.pdbqt --spacing 1.0 -o .\autosite_02\
+agfr -h
+agfr -r OTUD1.pdbqt -asv 1.1
+ls
+cd .\OTUD1\
+ls
+cd ..
+.\autosite\
+cd ..
+autosite.bat
+python
+python "C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoSite\bin\AS.py"
+set path=C:\Program Files (x86)\ADFRsuite-1.0\bin;C:\Program Files (x86)\ADFRsuite-1.0\OpenBabel-2.4.1;%path%
+python "C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoSite\bin\AS.py"
+Get-Command autosite.bat
+cd .\OTUD1\
+C:\Program Files (x86)\ADFRsuite-1.0\bin\autosite.bat
+"C:\Program Files (x86)\ADFRsuite-1.0\bin\autosite.bat"
+autosite
+autosite -asv
+autosite -v
+adfr
+agfr
+agfr -h
+autosite
+agfr -h
+autosite --autositeV 1.1
+autosite -asv 1.1
+agfr -r OTUD1.pdbqt -asv 1.1 -p forTop -o OTUD1_agfr_Auto1_1.trg.zip
+ls
+agfr -h
+agfr -r OTUD1.pdbqt -asv 1.1 -p forEach -o OTUD1_agfr_02.trg.zip
+agfr -h
+agfr -r OTUD1.pdbqt -asv 1.1 -p best -o OTUD1_agfr_03
+agfr -r OTUD1.pdbqt -asv 1.1 -p 2 -o OTUD1_agfr_p02
+agfr -h
+agfr -r OTUD1.pdbqt -asv 1.1 -p forTop -C 2 -o OTUD1_agfr_p02
+history
+agfr -h
+autosite.bat -h
+prepare_receptor.bat -h
+cd .\Documents\Stablix\Mcule\
+ls
+mkdir USP10
+cd .\USP10\
+ls
+prepare_receptor.bat -r .\USP10.pdb
+ls
+more .\USP10.pdbqt
+ls
+prepare_receptor.bat -r .\USP10_AF-Q14694.pdb
+ls
+rm USP10_AF-Q14694_model1.pdbqt
+ls
+prepare_receptor.bat -r .\USP10_AF.pdb
+ls
+prepare_receptor.bat -h
+more prepare_receptor.bat
+prepare_receptor.bat -r .\USP10_AF.pdb -A 'bonds_hydrogens'
+more .\USP10_AF.pdbqt
+autosite.bat -h
+autosite.bat -r .\USP10_AF.pdbqt
+prepare_ligand.bat -h
+obabel
+-i sdf -o mol2
+obabel -i sdf -o mol2
+obabel -isdf -o mol2
+ls
+cd ..\USP8\
+ls
+cd .\Dock\
+ls
+python
+python3
+pip
+history | grep prepare
+history 
+adfr
+prepare_receptor.bat
+cd .\Documents\Stablix\AWS\data\USP8\conf\
+prepare_ligand.bat -r .\3N3K_USP8.pdbqt -A checkhydrogens
+which prepare_receptor.bat
+who prepare_receptor.bat
+pcm prepare_receptor.bat
+gcm prepare_receptor.bat
+prepare_receptor.bat -r .\3N3K_USP8.pdbqt -A checkhydrogens
+ls
+cd 
+cd ..
+ls
+cd .\mcule_P1_F12000\select\
+ls
+cd ..
+ls
+bash
+prepare_receptor.bat
+prepare_receptor.bat -h
+history
+head
+tail
+head
+obabel.exe
+find
+ grep
+cd .\Documents\Stablix\
+find *.pse
+find -h
+find -help
+help find
+find .\
+find ./
+history
+ls
+pythonsh
+ls
+grep
+pythonsh
+cd C:\mgltools\
+ls
+cd ..
+ls
+cd '.\Program Files (x86)\'
+ls
+cd .\ADFRsuite-1.0\
+ls
+find
+cd .\Tools\
+ls
+cd .\Scripts\
+ls
+mv
+cd 
+cd C:\Users\Evangelos\Documents\Stablix\Mcule\OTUs\OTU_compounds_01\
+ls
+.\rename_by_1st_line_04.py
+python3 .\rename_by_1st_line_04.py
+H:
+ls
+cd '.\My Drive\'
+du
+dir /S
+dir /?
+diruse
+du
+dir /?
+agfr
+cd .\Documents\Stablix\AWS\data\OTUs\OTUD7B
+cd .\Documents\Stablix\AWS\data\OTUs\Blind_Docking\OTUD7B\
+ls
+cd .\conf\
+ls
+agfr -r .\5LRU.pdbqt -o .\OTUD7B_5LRU_1.trg
+ls
+cd .\OTUD7B_5LRU_1\
+ls
+cd ..
+agfr -h
+agfr -r .\5LRU.pdbqt -asv 1.1 -o .\OTUD7B_5LRU_2.trg
+ls
+cd .\OTUD7B_5LRU_top8_1\
+ls
+cd ..
+ls
+about OTUD7B_8.trg
+about 5LRU_bak.trg
+about OTUD7B_5LRU_top8_1
+echo adcp.bat
+type echo adcp.bat
+echo type adcp.bat
+more  adcp.bat
+adcp.bat
+ls
+reduce.bat .\5LRU.pdb > .\5LRU_reduce.pdb
+ls
+prepare_receptor.bat -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+ls
+prepare_receptor.bat -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py 
+"C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py"
+"C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py" -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+'C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py' -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+& 'C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py'
+'C:\Program Files (x86)\ADFRsuite-1.0\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py'
+'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_receptor.bat' -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_receptor.bat -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_ligand.bat' -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_ligand.bat -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt'
+& 'C:\Program Files (x86)\ADFRsuite-1.0\bin\prepare_ligand.bat' -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+prepare_receptor.bat -r .\5LRU_reduce.pdb -o .\5LRU_reduce.pdbqt
+more .\5LRU_reduce.pdb
+ls
+agfr -r .\5LRU.pdbqt -ng -asv 1.1 -o .\OTUD7B_5LRU_3.trg
+ls
+prepare_receptor.bat -r .\OTUD7B_reduce.pdb -o .\OTUD7B_reduce.pdbqt
+more .\OTUD7B_reduce.pdbqt
+ls
+agfr -r .\OTUD7B_reduce.pdbqt -ng -asv 1.1 -o .\OTUD7B_reduce_1.trg
+cd .\Documents\
+cd .\Stablix\Scripts\
+ls
+pymol
+python
+pymol
+C:\ProgramData\pymol\PyMOLWin.exe -h
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\Draw_Protein_Dimensions_EP02.py
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\scratch.pml
+python3 .\box_Proteins_01.py
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+pwd
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+cd .\MMSEG_pdbqt\
+pwd
+cd ..
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+ls .\MMSEG_pdbqt\
+more .\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+C:\ProgramData\pymol\PyMOLWin.exe -cq
+C:\ProgramData\pymol\PyMOLWin.exe --help
+pymol
+ls C:\ProgramData\pymol\
+C:\ProgramData\pymol\pythonw.exe --help
+pymol
+pymol --help
+C:\ProgramData\pymol\pythonw.exe --help
+C:\ProgramData\pymol\PyMOLWin.exe --help
+C:\ProgramData\pymol\Scripts\pymol.exe --help
+C:\ProgramData\pymol\Scripts\pymol.exe -qc
+C:\ProgramData\pymol\Scripts\pymol.exe -c
+ls
+C:\ProgramData\pymol\Scripts\pymol.exe -qc 'run drawMinBoundBox_EP3.py'
+pwd
+C:\ProgramData\pymol\Scripts\pymol.exe -qc 'cd C:\Users\Evangelos\Documents\Stablix\Scripts' 'run drawMinBoundBox_EP3.py'
+C:\ProgramData\pymol\Scripts\pymol.exe -qc .\scratch.pml
+history
+agfr.bat -h
+cd ..\AWS\
+ls
+obabel
+cd .\data\OTUs\Blind_Docking\compounds\
+ls
+obabel -ipdbqt *.pdbqt -o svg > all_2.svg
+history
+ls
+history
+ls
+history
+python3
+ls
+cd .\Documents\Stablix\Scripts\
+ls
+.\box_Proteins_01.py
+box_Proteins_01.py
+.\box_Proteins_01.py
+python3 .\box_Proteins_01.py
+python3 box_Proteins_01.py
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\MMSEG_pdbqt\ZBTB38.pdbqt
+ls
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\MMSEG_pdbqt\ZBTB38.pdbqt .\scratch_02.pml
+cp .\out.out .\MMSEG_pdbqt\ZBTB38.conf
+mv .\out.out .\MMSEG_pdbqt\ZBTB38.conf
+python3 box_Proteins_01.py
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\MMSEG_pdbqt\ZBTB38.pdbqt .\scratch_02.pml
+mv out.out  .\MMSEG_pdbqt\ ZBTB38.conf
+mv out.out  .\MMSEG_pdbqt\ZBTB38.conf
+python3 box_Proteins_01.py
+C:\ProgramData\pymol\PyMOLWin.exe -cq .\MMSEG_pdbqt\ZBTB38.pdbqt .\scratch_02.pml
+python3 box_Proteins_01.py
+which mv
+python3 box_Proteins_01.py
+cat
+cd .\Documents\Stablix\Scripts\
+history
+Get-History
+doskey
+doskey /history
+(Get-PSReadlineOption).HistorySavePath
+more C:\Users\Evangelos\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+cp C:\Users\Evangelos\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt WinPowerHist.txt

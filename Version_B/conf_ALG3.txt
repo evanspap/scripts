@@ -1,0 +1,11 @@
+receptor =./conf/ALG3.pdbqt
+
+center_x = -9.607
+center_y = -25.061
+center_z = 9.436
+
+size_x = 86.355
+size_y = 109.174
+size_z = 70.029
+exhaustiveness=64
+num_modes=8
