@@ -1,0 +1,20 @@
+
+select pos,(resn arg+lys+his)
+#show sticks, (pos and !name c+n+o)
+color marine,pos
+disable pos
+
+select neg,(resn glu+asp)
+#show sticks, (neg and !name c+n+o)
+color red,neg
+disable neg
+
+select arom, (resn trp+phe+tyr)
+#show sticks, (arom and !name c+n+o)
+color orange,arom
+disable arom
+
+select polar, (resn ser+thr+cys+tyr+asn+gln)
+#show sticks, (polar and !name c+n+o)
+color yellow, polar
+disable polar
