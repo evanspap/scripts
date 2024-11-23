@@ -2,18 +2,24 @@ import os
 import shutil
 import sys
 
-# Check if enough arguments are provided
-if len(sys.argv) != 4:
-    print("Usage: python copy_select_files.py <source_folder> <destination_folder> <identifiers_file>")
+def print_usage():
+    print("Usage: python script.py <source_folder> <destination_folder> <identifiers_file> <strip_characters> [--dry-run]")
     sys.exit(1)
 
-# Get source and destination folder paths and identifiers file from command-line arguments
+# Check if enough arguments are provided
+if len(sys.argv) < 5 or len(sys.argv) > 6:
+    print_usage()
+
+# Get source and destination folder paths, identifiers file, and characters to strip
 source_folder = sys.argv[1]
 destination_folder = sys.argv[2]
 identifiers_file = sys.argv[3]
+strip_characters = sys.argv[4]
+dry_run = "--dry-run" in sys.argv
 
-# Ensure the destination folder exists
-os.makedirs(destination_folder, exist_ok=True)
+# Ensure the destination folder exists (if not a dry run)
+if not dry_run:
+    os.makedirs(destination_folder, exist_ok=True)
 
 # Read identifiers from the provided file
 try:
@@ -23,8 +29,8 @@ except FileNotFoundError:
     print(f"Error: File '{identifiers_file}' not found.")
     sys.exit(1)
 
-# Remove '>' and add '.fasta' to each identifier
-file_names = [id.strip('> ') + '.fasta' for id in identifiers]
+# Remove specified characters and add '.fasta' to each identifier
+file_names = [id.strip(strip_characters) + '.fasta' for id in identifiers]
 
 # Process each file
 for file_name in file_names:
@@ -33,8 +39,14 @@ for file_name in file_names:
 
     # Check if the file exists in the source folder
     if os.path.exists(source_file_path):
-        # Copy the file to the destination folder
-        shutil.copy(source_file_path, destination_file_path)
-        print(f"Copied: {file_name}")
+        if dry_run:
+            print(f"Would copy: {source_file_path} to {destination_file_path}")
+        else:
+            shutil.copy(source_file_path, destination_file_path)
+            print(f"Copied: {file_name}")
     else:
         print(f"File not found: {file_name}")
+
+# Dry-run feedback
+if dry_run:
+    print("\nDry run complete. No files were copied.")
