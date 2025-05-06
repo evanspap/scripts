@@ -1,0 +1,1 @@
+ find ./BACKUP_BAS/ -type f | while read file; do wslpath -w "$file"; done
