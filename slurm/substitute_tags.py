@@ -3,22 +3,12 @@
 substitute_tags.py – Fill placeholder tags in a SLURM template and optionally
 select suitable resources from `sinfo`.
 
-NEW IN v1.2  (2025‑05‑23)
+NEW IN v1.3  (2025‑05‑23)
 ────────────────────────
-* Accept **--param-file FILE** with KEY=VALUE pairs so you can keep long
-  absolute paths out of the command‑line. Keys are identical to the long
-  flags (indir, outdir, trg, cfg, threads, partition, nodes, walltime,
-  ligands). Command‑line flags always override the file.
-
-Recognised template tags (double underscores):
-    __INDIR__     – input ligand directory
-    __OUTDIR__    – output directory for docked ligands
-    __TRGTAG__    – string appended to each output file name
-    __CONFIG__    – path to Vina conf file
-    __THREADS__   – CPU cores per node
-    __PARTITION__ – Slurm queue name
-    __NODES__     – number of nodes
-    __WALLTIME__  – wall‑clock limit (HH:MM:SS)
+* **Automatic ligand count** – If `ligands` is omitted, the script now
+  counts `*.pdbqt` files in `indir` and uses that number when estimating
+  resources.
+* `--param-file` logic unchanged; CLI flags still override everything.
 
 Usage examples
 --------------
@@ -180,11 +170,20 @@ def main():
     if missing:
         sys.exit(f"Missing required params: {', '.join(missing)}")
 
-    # Resource auto‑selection
-    if not (params["partition"] and params["nodes"] and params["walltime"]):
-        idle = parse_sinfo()
-        ligands = params["ligands"] or 7000
-        part, nod, wtime = choose_resources(idle, ligands, params["threads"] or 96)
+    # If ligands not provided, count *.pdbqt in indir
+if params["ligands"] is None:
+    try:
+        from glob import glob
+        params["ligands"] = len(glob(os.path.join(os.path.expanduser(params["indir"]), "*.pdbqt")))
+    except OSError:
+        params["ligands"] = 7000  # fallback
+
+# Resource auto‑selection
+if not (params["partition"] and params["nodes"] and params["walltime"]):
+    idle = parse_sinfo()
+    ligands = params["ligands"] or 7000
+    part, nod, wtime = choose_resources(idle, ligands, params["threads"] or 96)
+    params["partition"], params["nodes"], params["walltime"] = part, nod, wtime(idle, ligands, params["threads"] or 96)
         params["partition"], params["nodes"], params["walltime"] = part, nod, wtime
 
     mapping = {
