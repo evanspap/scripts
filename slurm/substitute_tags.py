@@ -1,115 +1,123 @@
 #!/usr/bin/env python3
 """
-substitute_tags.py – Fill placeholder tags in a SLURM template and optionally
-select suitable resources from `sinfo`.
+substitute_tags.py  –  Fill __TAG__ placeholders in a SLURM template file.
 
-NEW IN v1.4  (2025‑05‑23)
+Version 1.8  · 2025‑05‑23
 ────────────────────────
-* **Fixes indentation bug** that caused an `IndentationError`.
-* **Cleans duplicate code** and streamlines auto‑resource selection.
-* Counts `*.pdbqt` files in `indir` when `ligands` not supplied.
-* `--param-file` remains available; CLI flags still override.
+* Robust `parse_sinfo()` using only universally‑supported format codes.
+* Auto‑count ligands ( *.pdbqt ) when `ligands` param omitted.
+* Optional param‑file with KEY=VALUE pairs; CLI flags override file.
+* Dry‑run prints substituted template to STDOUT.
 """
 
-from __future__ import annotations
-
 import argparse
-import math
 import os
+import re
 import subprocess
 import sys
-from datetime import timedelta
 from glob import glob
-from pathlib import Path
 
-# queues in order of preference for docking jobs
-PREFERENCE_ORDER = [
-    "short-96core",          # fastest queue if idle nodes available
-    "medium-96core",
-    "short-96core-shared",
-    "medium-96core-shared",
-]
+# ------------------------ Helpers ------------------------ #
 
-# minutes a single ligand typically needs on one core
-MINUTES_PER_LIGAND = 15
-
-###############################################################################
-# Utility helpers
-###############################################################################
-
-def run(cmd: list[str]) -> str:
-    """Run a shell command and capture its stdout (stripped)."""
-    return subprocess.check_output(cmd, text=True).strip()
-
-
-def parse_param_file(path: str | Path) -> dict[str, str]:
-    """Parse KEY=VALUE lines (shell‑style) into a dict."""
-    params: dict[str, str] = {}
-    with open(path, "r", encoding="utf-8") as fh:
-        for raw in fh:
-            line = raw.strip()
-            if not line or line.startswith("#") or "=" not in line:
+def parse_param_file(path):
+    vals = {}
+    with open(path) as fh:
+        for line in fh:
+            line = line.split('#', 1)[0].strip()  # strip comments
+            if not line:
                 continue
-            k, v = line.split("=", 1)
-            params[k.strip().lower()] = v.strip()
-    return params
+            if '=' not in line:
+                continue
+            k, v = map(str.strip, line.split('=', 1))
+            vals[k.lower()] = v
+    return vals
 
 
-def parse_sinfo() -> dict[str, int]:
-    """Return a {partition: idle_nodes} mapping from `sinfo`."""
-    out = run(["sinfo", "--noheader", "--Format=partition,stateslong,nodelist"])
-    idle: dict[str, int] = {}
-    for row in out.splitlines():
-        part, state, nodelist = row.split(None, 2)
-        if state != "idle":
+def parse_sinfo():
+    """Return dict {partition: idle_nodes}. Safe if sinfo unavailable."""
+    try:
+        out = subprocess.check_output(
+            ["sinfo", "-h", "-t", "idle", "-o", "%P %D"],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+
+    idle = {}
+    for row in out.strip().splitlines():
+        if not row.strip():
             continue
-        # crude count of nodes in the bracket notation
-        count = 0
-        for seg in nodelist.split(","):
-            if "[" in seg and "]" in seg:
-                rng = seg.split("[")[1].rstrip("]")
-                start, end = (rng.split("-", 1) + [rng])[:2]
-                count += int(end) - int(start) + 1
-            else:
-                count += 1
-        idle[part] = count
+        # Expect two fields: partition (* may be suffixed), #idle nodes
+        parts = row.split(None, 1)
+        if len(parts) != 2:
+            continue
+        part, n_nodes = parts
+        part = part.rstrip('*')  # remove star on default partition
+        try:
+            idle[part] = int(n_nodes)
+        except ValueError:
+            continue
     return idle
 
 
-def choose_resources(idle: dict[str, int], ligands: int, threads: int):
-    """Pick (partition, nodes, walltime) based on current idle nodes."""
-    for queue in PREFERENCE_ORDER:
-        nodes_idle = idle.get(queue, 0)
-        if nodes_idle == 0:
-            continue
-        cores_per_node = 96 if "96core" in queue else 40
-        waves = math.ceil(ligands / (cores_per_node * nodes_idle))
-        est_hours = waves * (MINUTES_PER_LIGAND / 60)
-        # cap walltime within each queue's maximum (4 h for short, 12 h for medium)
-        max_hours = 4 if "short" in queue else 12
-        walltime = str(timedelta(hours=min(max(est_hours, 1), max_hours)))
-        return queue, nodes_idle, walltime
-    # default fallback
-    return "debug-40core", 1, "01:00:00"
+def choose_resources(idle, ligands):
+    """Return (partition, nodes, walltime, cores_per_node)."""
+    # Candidate lists ordered by preference
+    ordering_96 = [
+        ("short-96core", 4, "04:00:00"),
+        ("medium-96core", 6, "12:00:00"),
+        ("long-96core", 6, "48:00:00"),
+    ]
+    ordering_40 = [
+        ("short-40core", 4, "04:00:00"),
+        ("medium-40core", 6, "12:00:00"),
+        ("long-40core", 6, "48:00:00"),
+    ]
+
+    def _pick(order):
+        for part, min_nodes, max_wall in order:
+            if idle.get(part, 0) >= min_nodes:
+                nodes = min(idle[part], 8 if part.startswith("short") else 16)
+                cores = 96 if "96core" in part else 40
+                est_hours = int((ligands / (nodes * cores) * 0.30) + 1)
+                est_hours = max(1, est_hours)
+                wall = f"{est_hours:02d}:00:00"
+                # cap by queue max
+                if _time_to_hours(wall) > _time_to_hours(max_wall):
+                    wall = max_wall
+                return part, nodes, wall, cores
+        return None
+
+    def _time_to_hours(t):
+        h, m, s = map(int, t.split(":"))
+        return h + m/60 + s/3600
+
+    choice = _pick(ordering_96)
+    if choice is None:
+        choice = _pick(ordering_40)
+    if choice is None:
+        # fallback to any idle partition with most nodes
+        if idle:
+            part = max(idle, key=idle.get)
+            nodes = idle[part]
+            cores = 96 if "96core" in part else 40
+            wall = "08:00:00"
+            return part, nodes, wall, cores
+        # No idle info
+        return "medium-96core", 6, "12:00:00", 96
+    return choice
 
 
-def substitute(text: str, mapping: dict[str, str]):
-    for key, val in mapping.items():
-        text = text.replace(f"__{key}__", str(val))
-    return text
-
-###############################################################################
-# Main program
-###############################################################################
+# ------------------------ Main ------------------------ #
 
 def main():
-    ap = argparse.ArgumentParser(description="Substitute tags in a SLURM template")
-    ap.add_argument("template", help="input SLURM template with placeholders")
-    ap.add_argument("output", nargs="?", help="output file (defaults to STDOUT with --dry-run)")
+    ap = argparse.ArgumentParser(description="Substitute __TAG__ placeholders in a SLURM template.")
+    ap.add_argument("template", help="Input SLURM template file (with tags)")
+    ap.add_argument("output", nargs="?", help="Output file to write (omit for stdout)")
 
-    ap.add_argument("--param-file", help="file with KEY=VALUE lines (shell style)")
-
-    # individual overrides
+    # Param acquisition
+    ap.add_argument("--param-file")
     ap.add_argument("--indir")
     ap.add_argument("--outdir")
     ap.add_argument("--trg")
@@ -119,12 +127,11 @@ def main():
     ap.add_argument("--nodes", type=int)
     ap.add_argument("--walltime")
     ap.add_argument("--ligands", type=int)
-
     ap.add_argument("--dry-run", action="store_true")
+
     args = ap.parse_args()
 
-    # initialise param dict
-    params: dict[str, str | int | None] = {
+    params = {
         "indir": args.indir,
         "outdir": args.outdir,
         "trg": args.trg,
@@ -136,61 +143,68 @@ def main():
         "ligands": args.ligands,
     }
 
-    # merge param-file (if any)
+    # Merge param-file (if any)
     if args.param_file:
-        for k, v in parse_param_file(args.param_file).items():
-            params.setdefault(k, v)
+        file_vals = parse_param_file(args.param_file)
+        for k, v in file_vals.items():
+            if params.get(k) is None:
+                params[k] = v
 
-    # convert numeric strings → int
+    # Convert numeric strings → int
     for key in ("threads", "nodes", "ligands"):
-        if isinstance(params[key], str):
+        if isinstance(params[key], str) and params[key].isdigit():
             params[key] = int(params[key])
 
-    # required
-    missing = [k for k in ("indir", "outdir", "trg", "cfg") if params[k] is None]
-    if missing:
-        sys.exit("Missing required params: " + ", ".join(missing))
-
-    # defaults
-    if params["threads"] is None:
-        params["threads"] = 96
-
-    # count ligands automatically if not provided
-    if params["ligands"] is None:
+    # Auto‑count ligands if still None
+    if params["ligands"] is None and params["indir"]:
         try:
-            pattern = os.path.join(os.path.expanduser(params["indir"]), "*.pdbqt")
-            params["ligands"] = len(glob(pattern))
+            params["ligands"] = len(glob(os.path.join(os.path.expanduser(params["indir"]), "*.pdbqt")))
         except OSError:
             params["ligands"] = 7000
+    if params["ligands"] is None:
+        params["ligands"] = 7000
 
-    # choose resources if any of the trio missing
+    # Auto resource select if any of (partition,nodes,walltime) unset
     if not (params["partition"] and params["nodes"] and params["walltime"]):
         idle = parse_sinfo()
-        part, nod, wtime = choose_resources(idle, int(params["ligands"]), int(params["threads"]))
-        params.setdefault("partition", part)
-        params.setdefault("nodes", nod)
-        params.setdefault("walltime", wtime)
+        part, nod, wall, corespn = choose_resources(idle, params["ligands"])
+        if params["partition"] is None:
+            params["partition"] = part
+        if params["nodes"] is None:
+            params["nodes"] = nod
+        if params["walltime"] is None:
+            params["walltime"] = wall
+        if params["threads"] is None:
+        params["threads"] = 96 if "96core" in params["partition"] else 40
 
-    # build mapping for substitution
-    mapping = {
-        "INDIR": Path(params["indir"]).expanduser(),
-        "OUTDIR": Path(params["outdir"]).expanduser(),
-        "TRGTAG": params["trg"],
-        "CONFIG": Path(params["cfg"]).expanduser(),
-        "THREADS": params["threads"],
-        "PARTITION": params["partition"],
-        "NODES": params["nodes"],
-        "WALLTIME": params["walltime"],
+    # Read template
+    with open(args.template) as fh:
+        text = fh.read()
+
+    # Substitutions
+    # Map param‑key → placeholder(s) in template
+    tagmap = {
+        "indir": "INDIR",
+        "outdir": "OUTDIR",
+        "trg": "TRGTAG",      # template uses __TRGTAG__
+        "cfg": "CONFIG",       # template uses __CONFIG__
+        "threads": "THREADS",
+        "partition": "PARTITION",
+        "nodes": "NODES",
+        "walltime": "WALLTIME",
     }
 
-    filled = substitute(Path(args.template).read_text(), mapping)
+    for key, value in params.items():
+        if key not in tagmap or value is None:
+            continue
+        text = text.replace(f"__{tagmap[key]}__", str(value))
 
     if args.dry_run or args.output is None:
-        print(filled)
+        sys.stdout.write(text)
     else:
-        Path(args.output).write_text(filled)
-        print(f"Running: sbatch {args.output}")
-
+        with open(args.output, "w") as out:
+            out.write(text)
+        print(f"Filled template written to {args.output}")
 
 if __name__ == "__main__":
     main()
