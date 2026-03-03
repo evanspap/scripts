@@ -1,0 +1,1 @@
+awk -F',' 'NR==1{for(i=1;i<=NF;i++)if($i=="Smiles")c=i;next}{print $c}' file.csv
