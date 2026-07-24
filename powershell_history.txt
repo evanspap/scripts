@@ -1,0 +1,17 @@
+Write-Host "Permanent PowerShell history activated:"
+Write-Host $historyFile
+Write-Host "Profile:"
+Write-Host $profilePath
+(Get-PSReadLineOption).HistorySavePath
+Get-Content 'H:\My Drive\VSCode_Github\scripts\powershell_history.txt' -Tail 30
+ls
+pwd
+Get-Content 'H:\My Drive\VSCode_Github\scripts\powershell_history.txt' -Tail 30
+cd H:\My Drive\VSCode_Github\Pymol\AI for Drug Discovery Project\simple_RMSD\Analysis_Pipeline_Code\RMSD_per_frame_biopython_7-21-26.py
+cd 'H:\My Drive\VSCode_Github\Pymol\AI for Drug Discovery Project\simple_RMSD\Analysis_Pipeline_Code\RMSD_per_frame_biopython_7-21-26.py'
+H:
+cd 'H:\My Drive\VSCode_Github\Pymol\AI for Drug Discovery Project\simple_RMSD\Analysis_Pipeline_Code\RMSD_per_frame_biopython_7-21-26.py'
+cd 'H:\My Drive\VSCode_Github\Pymol\AI for Drug Discovery Project\simple_RMSD\Analysis_Pipeline_Code'
+python .\RMSD_calculation_biopython_7-19-26.py
+clear
+python .\RMSD_calculation_biopython_7-19-26.py -h
