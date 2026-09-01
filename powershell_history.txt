@@ -15,3 +15,158 @@ cd 'H:\My Drive\VSCode_Github\Pymol\AI for Drug Discovery Project\simple_RMSD\An
 python .\RMSD_calculation_biopython_7-19-26.py
 clear
 python .\RMSD_calculation_biopython_7-19-26.py -h
+codex --version
+clear
+Get-ChildItem -Force "$env:USERPROFILE\.codex"
+Get-ChildItem -Force -Recurse "$env:USERPROFILE\.codex" |`
+    Select-Object FullName, Length, LastWriteTime |`
+    Select-Object -First 100
+Copy-Item ``
+    "$env:USERPROFILE\.codex" ``
+    "$env:USERPROFILE\.codex_backup_20260724" ``
+    -Recurse
+taskkill /F /IM Code.exe
+wsl --shutdown
+npm install -g @openai/codex
+codex --version
+where.exe codex
+codex --version
+where.exe codex
+codex resume --all
+ls
+histoty
+history
+cd ..
+ls
+ipconfig
+cd 
+ls
+cd .\geras\
+cd .\Downloads\
+ls
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+ls
+java -Xmx4096M -Xms1024M -jar minecraft_server.1.21.8.jar nogui
+ipconfig
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+history
+cd .\Downloads\
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+java -Xmx4096M -Xms1024M -jar minecraft_server.1.21.8.jar nogui
+ipconfig
+cd .\Downloads\
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+ls
+tar
+tar -cvf Minecraft_backup_20260729.tar world/
+tar -cvf Minecraft_backup_20260729.tar world
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+java -version
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+ipconfig
+cd .\Downloads\
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+cd .\Downloads\
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+IPCONFIG
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+IPCONFIG
+d:
+cd .\DCIM\
+ffmpeg
+cd .\Downloads\
+cd .\Minecraft-20250809T131719Z-1-001\Minecraft\
+java -Xmx4G -Xms4G -jar minecraft_server.26.2.jar nogui
+IPCONFIG
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+ls
+cd .\geyser\
+java -jar .\Geyser-Standalone.jar
+ls
+cd ..
+java -jar .\Geyser-Standalone.jar
+IPCONFIG
+pwd
+java -jar .\Geyser-Standalone.jar
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+curl -SsL https://github.io -o playit
+ipconfig
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx12G -Xms4G -jar minecraft_server.26.2.jar nogui
+ipconfig
+java -Xmx12G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx12G -Xms4G -jar minecraft_server.26.2.jar nogui
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+ipcoNFIG
+Get-Process playit -ErrorAction SilentlyContinue
+"C:\Program Files\playit_gg\bin\playit.exe"
+& "C:\Program Files\playit_gg\bin\playit.exe"
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+& "C:\Program Files\playit_gg\bin\playit.exe"
+cd "C:\Users\geras\Downloads\Minecraft-20250809T131719Z-1-001\Minecraft"
+java -Xmx8G -Xms4G -jar minecraft_server.26.2.jar nogui
+& "C:\Program Files\playit_gg\bin\playit.exe"
+Get-Disk
+Get-Partition -DiskNumber 1
+wsl --status
+wsl --list --verbose
+wsl --mount \\.\PHYSICALDRIVE1 --partition 2 --type ext4 --options "ro"
+notepad D:\cmdline.txt
+wsl --mount \\.\PHYSICALDRIVE1 --partition 2 --type ext4 --options "ro"
+  dir
+python H:\My Drive\VSCode_Github\MD_classification\New_RMSD_Calculation_Tools\RMSD_per_frame_biopython_7-21-26.py
+python 'H:\My Drive\VSCode_Github\MD_classification\New_RMSD_Calculation_Tools\RMSD_per_frame_biopython_7-21-26.py'
+python 'H:\My Drive\VSCode_Github\MD_classification\New_RMSD_Calculation_Tools\RMSD_per_frame_biopython_7-21-26.py' -h
+Y:
+dir
+Y:
+Get-PSDrive -PSProvider FileSystem
+Test-NetConnection 172.24.36.158 -Port 445
+net use Y: \\172.24.36.158\CORRECT_SHARE_NAME /persistent:yes
+net use Y: \\172.24.36.158\cmitsiades /persistent:yes
+Test-NetConnection 100.98.128.16 -Port 22
+Test-NetConnection 100.98.128.16 -Port 445
+P:
+dir
+c:
+Test-NetConnection 100.98.128.16 -Port 22
+Test-NetConnection 100.98.128.16 -Port 445
+ssh NIOPIX@100.98.128.16
+dir \\100.98.128.16\PiShare
+Y:
+dir
+P:
+dir
+ssh NIOPIX@raspberrypi
+geras@Papa:~$ ssh NIOPIX@raspberrypi
+^C
+geras@Papa:~$ ssh NIOPIX@100.98.128.16
+^C
+geras@Papa:~$ ip route
+default via 172.25.224.1 dev eth0 proto kernel
+172.25.224.0/20 dev eth0 proto kernel scope link src 172.25.232.163
+geras@Papa:~$ ip route get 100.98.128.16
+100.98.128.16 via 172.25.224.1 dev eth0 src 172.25.232.163 uid 1000
+    cache
+geras@Papa:~$ ping -c 3 100.98.128.16
+PING 100.98.128.16 (100.98.128.16) 56(84) bytes of data.
+--- 100.98.128.16 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2028ms
+geras@Papa:~$ nc -vz -w 5 100.98.128.16 22
+nc: connect to 100.98.128.16 port 22 (tcp) timed out: Operation now in progress
+geras@Papa:~$
+cd:
+c:
+wsl --version
+wsl --status
+ssh NIOPIX@raspberrypi
